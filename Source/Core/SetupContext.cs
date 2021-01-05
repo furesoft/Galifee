@@ -1,4 +1,6 @@
-﻿using Galifee.Core.Context;
+﻿using Galifee.Components;
+using Galifee.Core.Context;
+using Galifee.Core.Platforming;
 
 namespace Galifee.Core
 {
@@ -9,5 +11,12 @@ namespace Galifee.Core
         public ResourceLoaderStore ResourceLoaders = new ResourceLoaderStore();
 
         public Terminal Shell = new Terminal();
+
+        public IDefaultPaths Paths;
+
+        public SetupContext()
+        {
+            Paths = Platform.New<IDefaultPaths>();
+        }
     }
 }
