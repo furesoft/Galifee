@@ -8,5 +8,3 @@ extracter
 	-> zip/rar
 	-> msi?
 
-resource loader:
-	-> file resource
