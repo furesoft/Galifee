@@ -2,5 +2,6 @@
 {
     public interface IDefaultPaths
     {
+        string DesktopPath { get; }
     }
 }
