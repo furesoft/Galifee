@@ -10,6 +10,9 @@ namespace Galifee.Core
         private Dictionary<string, object> _properties = new Dictionary<string, object>();
         private List<IResourceLoader> _resourceLoaders = new List<IResourceLoader>();
 
+        private List<ISetupComponent> _components = new List<ISetupComponent>();
+        private Dictionary<ISetupComponent, int> _componentIndices = new Dictionary<ISetupComponent, int>();
+
         public string GetTempPath()
         {
             var tmpDir = Path.GetTempPath();
@@ -40,9 +43,21 @@ namespace Galifee.Core
             return null;
         }
 
-        public void RegisterComponent(object p)
+        public void RegisterComponent(ISetupComponent component)
         {
-            throw new NotImplementedException();
+            _components.Add(component);
+            _componentIndices.Add(component, _componentIndices.Count);
+        }
+
+        public void RegisterComponentAfterIndex(ISetupComponent component, int index)
+        {
+            _components.Insert(index, component);
+            _componentIndices.Add(p, _componentIndices.Count);
+        }
+
+        public int GetIndexOfComponent(ISetupComponent component)
+        {
+            return _componentIndices[component];
         }
     }
 }
