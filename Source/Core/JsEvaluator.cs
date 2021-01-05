@@ -6,9 +6,6 @@
 
         public static void Init()
         {
-            Parser.DefineCustomCodeFragment(typeof(KeysOfOperator));
-            Parser.DefineCustomCodeFragment(typeof(UsingStatement));
-
             //init js engine
             Context = new Context();
         }

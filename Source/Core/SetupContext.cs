@@ -13,7 +13,7 @@ namespace Galifee.Core
         public string GetTempPath()
         {
             var tmpDir = Path.GetTempPath();
-            var generated = "";
+            var generated = Utils.RandomString();
 
             return Path.Combine(tmpDir, generated);
         }

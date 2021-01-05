@@ -6,9 +6,11 @@ namespace Galifee.Extractors
 {
     public class ZipExtractor : IResourceExtractor
     {
-        public Task<string> Extract(Stream stream, SetupContext context)
+        public async Task<string> Extract(Stream stream, SetupContext context)
         {
-            throw new System.NotImplementedException();
+            var path = context.GetTempPath();
+
+            return path;
         }
     }
 }
