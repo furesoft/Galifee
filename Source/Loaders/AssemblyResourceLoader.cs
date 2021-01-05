@@ -17,16 +17,16 @@ namespace Galifee.Loaders
 
         public Assembly Assembly { get; }
 
-        public async Task<Stream> GetStream()
+        public Task<Stream> GetStream()
         {
             var strm = Assembly.GetManifestResourceStream(Fullname);
 
             if (strm != null)
             {
-                return strm;
+                return Task.FromResult(strm);
             }
 
-            return null;
+            return Task.FromResult<Stream>(null);
         }
     }
 }
