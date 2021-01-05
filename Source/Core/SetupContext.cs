@@ -7,6 +7,8 @@ namespace Galifree.Core
     {
         private Dictionary<string, object> _properties = new Dictionary<string, object>();
 
+        public Terminal Shell = new Terminal();
+
         public object GetProperty(string key)
         {
             if (_properties.ContainsKey(key))

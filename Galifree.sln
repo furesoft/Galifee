@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication", "TestAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSetup", "TestSetup\TestSetup.csproj", "{E5741560-5C0E-4637-8BF1-D674D709A999}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallifree.Dependencies", "Gallifree.Dependencies\Gallifree.Dependencies.csproj", "{CB4A201F-F788-490C-AA7A-43BCC25341A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E5741560-5C0E-4637-8BF1-D674D709A999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5741560-5C0E-4637-8BF1-D674D709A999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5741560-5C0E-4637-8BF1-D674D709A999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
