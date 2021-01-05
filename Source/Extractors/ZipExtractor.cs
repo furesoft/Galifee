@@ -8,7 +8,7 @@ namespace Galifee.Extractors
     {
         public Task<string> Extract(Stream stream, SetupContext context)
         {
-            var path = context.GetTempPath();
+            var path = Utils.GetTempPath();
 
             return Task.FromResult(path);
         }

@@ -7,7 +7,7 @@ namespace Galifee.Loaders
 {
     public class AssemblyResourceLoader : IResourceLoader
     {
-        public AssemblyResourceLoader(string fullname, ref Assembly assembly)
+        public AssemblyResourceLoader(string fullname, Assembly assembly)
         {
             Fullname = fullname;
             Assembly = assembly;
