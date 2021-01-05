@@ -1,8 +1,8 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
-using Galifree.Core;
+using Galifee.Core;
 
-namespace Galifree
+namespace Galifee
 {
     public static class Runtime
     {

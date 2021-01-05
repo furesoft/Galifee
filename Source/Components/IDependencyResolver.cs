@@ -1,8 +1,8 @@
-﻿using Galifree.Core;
+﻿using Galifee.Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Galifree.Components
+namespace Galifee.Components
 {
     public abstract class IDependencyResolver
     {

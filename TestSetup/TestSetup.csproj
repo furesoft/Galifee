@@ -8,6 +8,6 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Source\Galifree.csproj" />
+    <ProjectReference Include="..\Source\Galifee.csproj" />
   </ItemGroup>
 </Project>

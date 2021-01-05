@@ -1,6 +1,6 @@
-﻿using Galifree.Core.Platforming;
+﻿using Galifee.Core.Platforming;
 
-namespace Galifree.Components.OsSpecific.Windows
+namespace Galifee.Components.OsSpecific.Windows
 {
     [PlattformImplementation(OSName.Windows)]
     public class DefaultPathImplementation : IDefaultPaths

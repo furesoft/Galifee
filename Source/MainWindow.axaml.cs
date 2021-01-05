@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Galifree
+namespace Galifee
 {
     public class MainWindow : Window
     {

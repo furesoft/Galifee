@@ -1,10 +1,9 @@
-﻿using Galifree.Core;
-using System;
+﻿using Galifee.Core;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Galifree.ResourceLoader
+namespace Galifee.Loaders
 {
     public class AssemblyResourceLoader : IResourceLoader
     {

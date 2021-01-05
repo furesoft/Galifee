@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 
-namespace Galifree.Core
+namespace Galifee.Core
 {
     /// <summary>
     /// Arguments class

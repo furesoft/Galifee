@@ -1,9 +1,5 @@
-﻿using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Logging.Serilog;
-using Galifree;
-using Galifree.Core;
-using System;
+﻿using Galifee;
+using Galifee.Core;
 
 namespace TestSetup
 {

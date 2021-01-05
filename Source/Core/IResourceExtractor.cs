@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifree.Core
+namespace Galifee.Core
 {
     public interface IResourceExtractor
     {
@@ -10,6 +10,6 @@ namespace Galifree.Core
         /// </summary>
         /// <param name="stream"></param>
         /// <returns>#path to extracted Data Folder</returns>
-        Task<string> Extract(Stream stream);
+        Task<string> Extract(Stream stream, SetupContext context);
     }
 }

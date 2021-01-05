@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifree.Core
+namespace Galifee.Core
 {
     public class SetupContext
     {
         private Dictionary<string, object> _properties = new Dictionary<string, object>();
         private List<IResourceLoader> _resourceLoaders = new List<IResourceLoader>();
+
+        public string GetTempPath()
+        {
+            var tmpDir = Path.GetTempPath();
+            var generated = "";
+
+            return Path.Combine(tmpDir, generated);
+        }
 
         public Terminal Shell = new Terminal();
 

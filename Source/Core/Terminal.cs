@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace Galifree.Core
+namespace Galifee.Core
 {
     public class Terminal
     {

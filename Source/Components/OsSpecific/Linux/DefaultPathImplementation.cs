@@ -1,6 +1,6 @@
-﻿using Galifree.Core.Platforming;
+﻿using Galifee.Core.Platforming;
 
-namespace Galifree.Components.OsSpecific.Linux
+namespace Galifee.Components.OsSpecific.Linux
 {
     [PlattformImplementation(OSName.Linux)]
     public class DefaultPathImplementation : IDefaultPaths
