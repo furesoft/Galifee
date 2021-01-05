@@ -1,4 +1,4 @@
-﻿namespace Furesoft.Core.Platforming
+﻿namespace Galifree.Core.Platforming
 {
     public enum OSName
     {

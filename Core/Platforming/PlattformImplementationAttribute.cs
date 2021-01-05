@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Furesoft.Core.Platforming
+namespace Galifree.Core.Platforming
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class PlattformImplementationAttribute : Attribute

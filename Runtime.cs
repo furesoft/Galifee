@@ -1,6 +1,5 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
-using Furesoft.Core.CLI;
 
 namespace Galifree
 {
