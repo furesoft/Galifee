@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Galifee.Core.Context
+namespace Galifee.Core.SetupContextStorages
 {
     public class PropertyStore
     {

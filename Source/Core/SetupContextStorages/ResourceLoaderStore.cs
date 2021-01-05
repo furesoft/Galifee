@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifee.Core.Context
+namespace Galifee.Core.SetupContextStorages
 {
     public class ResourceLoaderStore
     {
