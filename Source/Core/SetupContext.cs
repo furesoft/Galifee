@@ -1,6 +1,6 @@
 ﻿using Galifee.Components;
-using Galifee.Core.Context;
 using Galifee.Core.Platforming;
+using Galifee.Core.SetupContextStorages;
 
 namespace Galifee.Core
 {
@@ -13,10 +13,15 @@ namespace Galifee.Core
         public Terminal Shell = new Terminal();
 
         public IDefaultPaths Paths;
+        private string _tmpDir;
+
+        public string TempDirectory => _tmpDir;
 
         public SetupContext()
         {
             Paths = Platform.New<IDefaultPaths>();
+
+            _tmpDir = Utils.GetTempPath();
         }
     }
 }

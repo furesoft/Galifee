@@ -8,3 +8,6 @@ extracter
 	-> zip/rar
 	-> msi?
 
+integrated update check with netsprakle?
+	updatecheck component
+

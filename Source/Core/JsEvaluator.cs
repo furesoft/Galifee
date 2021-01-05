@@ -10,9 +10,9 @@
             Context = new Context();
         }
 
-        public static void Evaluate(string source)
+        public static JsValue Evaluate(string source)
         {
-            Context.Eval(source);
+            return Context.Eval(source);
         }
     }
 }

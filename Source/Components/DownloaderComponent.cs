@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Galifee.Components
 {
-    public class DownloaderComponent : ISetupComponent
+    public class DownloaderComponent : ISetupComponent, IVisualComponent
     {
         public string Filename { get; set; }
 
