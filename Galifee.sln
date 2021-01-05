@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication", "TestAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSetup", "TestSetup\TestSetup.csproj", "{E5741560-5C0E-4637-8BF1-D674D709A999}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gallifee.Dependencies", "Gallifree.Dependencies\Gallifee.Dependencies.csproj", "{CB4A201F-F788-490C-AA7A-43BCC25341A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gallifee.Dependencies", "Gallifee.Dependencies\Gallifee.Dependencies.csproj", "{CB4A201F-F788-490C-AA7A-43BCC25341A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
