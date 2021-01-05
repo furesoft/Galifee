@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.9.12" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Scripting\" />
+  </ItemGroup>
+</Project>
