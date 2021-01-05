@@ -1,16 +1,17 @@
 ﻿using Avalonia.Controls;
+using System.Threading.Tasks;
 
 namespace Galifee.Core
 {
     public interface ISetupComponent
     {
-        void BeforeInstall(SetupContext context);
+        Task BeforeInstall(SetupContext context);
 
-        void BeforeUninstall(SetupContext context);
+        Task BeforeUninstall(SetupContext context);
 
-        void AfterInstall(SetupContext context);
+        Task AfterInstall(SetupContext context);
 
-        void AfterUninstall(SetupContext context);
+        Task AfterUninstall(SetupContext context);
 
         /// <summary>
         /// Will be invoked if installer is not in silent mode.

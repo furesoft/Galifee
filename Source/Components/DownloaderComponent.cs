@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls;
 using Galifee.Core;
+using System.Threading.Tasks;
 
 namespace Galifee.Components
 {
@@ -7,22 +8,22 @@ namespace Galifee.Components
     {
         public string Filename { get; set; }
 
-        public void AfterInstall(SetupContext context)
+        public Task AfterInstall(SetupContext context)
         {
             throw new System.NotImplementedException();
         }
 
-        public void AfterUninstall(SetupContext context)
+        public Task AfterUninstall(SetupContext context)
         {
             throw new System.NotImplementedException();
         }
 
-        public void BeforeInstall(SetupContext context)
+        public Task BeforeInstall(SetupContext context)
         {
             throw new System.NotImplementedException();
         }
 
-        public void BeforeUninstall(SetupContext context)
+        public Task BeforeUninstall(SetupContext context)
         {
             throw new System.NotImplementedException();
         }
