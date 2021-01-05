@@ -8,7 +8,7 @@ namespace TestSetup
         public static void Main(string[] args)
         {
             var context = new SetupContext();
-            context.RegisterComponent(null);
+            context.Components.RegisterComponent(null);
 
             Runtime.Run(args);
         }

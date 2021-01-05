@@ -1,10 +1,19 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 
 namespace Galifee.Core
 {
     public static class Utils
     {
+        public static string GetTempPath()
+        {
+            var tmpDir = Path.GetTempPath();
+            var generated = Utils.RandomString();
+
+            return Path.Combine(tmpDir, generated);
+        }
+
         internal static string RandomString()
         {
             var rndm = new Random();
