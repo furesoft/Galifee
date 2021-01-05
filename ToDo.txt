@@ -1,0 +1,12 @@
+components
+	-> registry change
+	-> xmlfile change
+	-> downloader
+	-> shell executer
+
+extracter
+	-> zip/rar
+	-> msi?
+
+resource loader:
+	-> file resource
