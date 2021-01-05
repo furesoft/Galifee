@@ -1,9 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Galifree
 {
