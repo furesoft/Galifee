@@ -1,12 +1,12 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
+using Galifree.Core;
 
 namespace Galifree
 {
     public static class Runtime
     {
-        public static void Run<App>(string[] args)
-            where App : Application, new()
+        public static void Run(string[] args)
         {
             var cli = new CommandlineArguments(args);
 

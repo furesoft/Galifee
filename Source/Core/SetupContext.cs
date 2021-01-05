@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Galifree.Core
 {
@@ -14,6 +15,11 @@ namespace Galifree.Core
             }
 
             return null;
+        }
+
+        public void RegisterComponent(object p)
+        {
+            throw new NotImplementedException();
         }
     }
 }
