@@ -11,6 +11,8 @@ namespace Galifee.Core
         public ComponentStore Components = new ComponentStore();
         public ResourceLoaderStore ResourceLoaders = new ResourceLoaderStore();
 
+        public InstallActionPipeline Pipeline = new InstallActionPipeline();
+
         public Terminal Shell = new Terminal();
 
         public IDefaultPaths Paths;

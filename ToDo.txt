@@ -11,3 +11,5 @@ extracter
 integrated update check with netsprakle?
 	updatecheck component
 
+IInstallAction for installation process
+ISetupComponent for ui tabs for configuration

@@ -4,22 +4,22 @@ namespace Galifee.Core.SetupContextStorages
 {
     public class ComponentStore
     {
-        private List<ISetupComponent> _components = new List<ISetupComponent>();
-        private Dictionary<ISetupComponent, int> _componentIndices = new Dictionary<ISetupComponent, int>();
+        private List<IVisualComponent> _components = new List<IVisualComponent>();
+        private Dictionary<IVisualComponent, int> _componentIndices = new Dictionary<ISetuIVisualComponentpComponent, int>();
 
-        public void RegisterComponent(ISetupComponent component)
+        public void RegisterComponent(IVisualComponent component)
         {
             _components.Add(component);
             _componentIndices.Add(component, _componentIndices.Count);
         }
 
-        public void RegisterComponentAfterIndex(ISetupComponent component, int index)
+        public void RegisterComponentAfterIndex(IVisualComponent component, int index)
         {
             _components.Insert(index, component);
             _componentIndices.Add(component, _componentIndices.Count);
         }
 
-        public int GetIndexOfComponent(ISetupComponent component)
+        public int GetIndexOfComponent(IVisualComponent component)
         {
             return _componentIndices[component];
         }
