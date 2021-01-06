@@ -12,22 +12,25 @@ namespace Galifee.Components
         {
             JsEvaluator.Init();
 
-            var sr = new StreamReader(await Loader.GetStream());
-
-            var content = sr.ReadToEnd();
-
-            var result = JsEvaluator.Evaluate(content);
+            var result = await Evaluate();
         }
 
         public async Task BeforeUninstall(SetupContext context)
         {
             JsEvaluator.Init();
 
+            var result = await Evaluate();
+        }
+
+        private Task<JsValue> Evaluate()
+        {
             var sr = new StreamReader(await Loader.GetStream());
 
             var content = sr.ReadToEnd();
 
             var result = JsEvaluator.Evaluate(content);
+
+            return Task.FromResult(result);
         }
 
         public Task OnInstall(SetupContext context)
