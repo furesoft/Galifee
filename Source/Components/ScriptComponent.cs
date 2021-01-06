@@ -6,22 +6,28 @@ namespace Galifee.Components
 {
     public class ScriptComponent : ISetupComponent, IBeforeInstallEvent
     {
-        public string Filename { get; set; }
+        public IResourceLoader Loader { get; set; }
 
-        public Task BeforeInstall(SetupContext context)
+        public async Task BeforeInstall(SetupContext context)
         {
             JsEvaluator.Init();
 
-            return Task.CompletedTask;
+            var sr = new StreamReader(await Loader.GetStream());
+
+            var content = sr.ReadToEnd();
+
+            var result = JsEvaluator.Evaluate(content);
         }
 
-        public Task BeforeUninstall(SetupContext context)
+        public async Task BeforeUninstall(SetupContext context)
         {
             JsEvaluator.Init();
 
-            context.TmpDir.GetFile(Filename);
+            var sr = new StreamReader(await Loader.GetStream());
 
-            return Task.CompletedTask;
+            var content = sr.ReadToEnd();
+
+            var result = JsEvaluator.Evaluate(content);
         }
 
         public Task OnInstall(SetupContext context)
