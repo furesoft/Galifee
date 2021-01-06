@@ -1,6 +1,7 @@
 ﻿using Galifee.Components;
 using Galifee.Core.Platforming;
 using Galifee.Core.SetupContextStorages;
+using System.IO;
 
 namespace Galifee.Core
 {
@@ -16,6 +17,8 @@ namespace Galifee.Core
         private string _tmpDir;
 
         public string TempDirectory => _tmpDir;
+
+        public DirectoryInfo TmpDir => new DirectoryInfo(_tmpDir);
 
         public SetupContext()
         {

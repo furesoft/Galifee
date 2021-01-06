@@ -1,4 +1,5 @@
 ﻿using Galifee.Core;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Galifee.Components
@@ -17,6 +18,8 @@ namespace Galifee.Components
         public Task BeforeUninstall(SetupContext context)
         {
             JsEvaluator.Init();
+
+            context.TmpDir.GetFile(Filename);
 
             return Task.CompletedTask;
         }
