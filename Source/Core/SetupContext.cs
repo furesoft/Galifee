@@ -26,5 +26,17 @@ namespace Galifee.Core
 
             _tmpDir = Utils.GetTempPath();
         }
+
+        public void ExecuteComponentInstall(ISetupComponent component)
+        {
+            // if component is IVisualComponent and not in silent mode then add ui
+            component.OnInstall(this);
+        }
+
+        public void ExecuteComponentUninstall(ISetupComponent component)
+        {
+            // if component is IVisualComponent and not in silent mode then add ui
+            component.OnUninstall(this);
+        }
     }
 }
