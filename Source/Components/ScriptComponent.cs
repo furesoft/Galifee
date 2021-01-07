@@ -42,5 +42,10 @@ namespace Galifee.Components
         {
             return Task.CompletedTask;
         }
+
+        public Task OnUpgrade(SetupContext context)
+        {
+            return Task.CompletedTask;
+        }
     }
 }

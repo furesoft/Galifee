@@ -40,5 +40,11 @@ namespace Galifee.Core
             // if component is IVisualComponent and not in silent mode then add ui
             component.OnUninstall(this);
         }
+
+        public void ExecuteComponentUpgrade(ISetupComponent component)
+        {
+            // if component is IVisualComponent and not in silent mode then add ui
+            component.OnUninstall(this);
+        }
     }
 }

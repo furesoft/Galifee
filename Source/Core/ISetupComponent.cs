@@ -7,5 +7,7 @@ namespace Galifee.Core
         Task OnInstall(SetupContext context);
 
         Task OnUninstall(SetupContext context);
+
+        Task OnUpgrade(SetupContext context);
     }
 }

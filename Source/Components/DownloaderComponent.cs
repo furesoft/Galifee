@@ -22,5 +22,10 @@ namespace Galifee.Components
         {
             throw new System.NotImplementedException();
         }
+
+        public Task OnUpgrade(SetupContext context)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
