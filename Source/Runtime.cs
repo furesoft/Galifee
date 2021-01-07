@@ -13,7 +13,7 @@ namespace Galifee
         {
             var cli = new CommandlineArguments(args);
 
-            var mode = Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
+            var mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
 
             Context.Properties.SetProperty("mode", mode);
 
@@ -28,6 +28,19 @@ namespace Galifee
             else
             {
                 // run cmd mode
+
+                if (mode == InstallMode.Install)
+                {
+                    Context.Pipeline.Install(Context);
+                }
+                else if (mode == InstallMode.Uninstall)
+                {
+                    Context.Pipeline.Uninstall(Context);
+                }
+                else if (mode == InstallMode.Upgrade)
+                {
+                    Context.Pipeline.Upgrade(Context);
+                }
             }
         }
     }

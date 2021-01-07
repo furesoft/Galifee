@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Galifee.Core
 {
@@ -56,6 +57,14 @@ namespace Galifee.Core
             foreach (var item in _afterEvents)
             {
                 item.AfterUninstall(context);
+            }
+        }
+
+        internal void Upgrade(SetupContext context)
+        {
+            foreach (var item in _components)
+            {
+                item.OnUpgrade(context);
             }
         }
     }
