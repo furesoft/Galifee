@@ -1,7 +1,7 @@
-﻿using GaliFee.Core.Interfaces;
+﻿using Galifee.Core.Interfaces;
 using System.Collections.Generic;
 
-namespace GaliFee.Core
+namespace Galifee.Core
 {
     public class InstallActionPipeline
     {

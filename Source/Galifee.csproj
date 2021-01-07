@@ -23,6 +23,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GaliFee.Core\GaliFee.Core.csproj" />
+    <ProjectReference Include="..\Galifee.Core\Galifee.Core.csproj" />
   </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
 ﻿using Galifee;
 using Galifee.LanguageResources;
-using GaliFee.Core;
-using GaliFee.Core.AppBuilder;
-using GaliFee.Core.Loaders;
+using Galifee.Core;
+using Galifee.Core.AppBuilder;
+using Galifee.Core.Loaders;
 
 namespace TestSetup
 {

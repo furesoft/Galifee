@@ -1,9 +1,9 @@
-﻿using GaliFee.Core.Interfaces;
+﻿using Galifee.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GaliFee.Core.I18N
+namespace Galifee.Core.I18N
 {
     public class LanguageManager
     {

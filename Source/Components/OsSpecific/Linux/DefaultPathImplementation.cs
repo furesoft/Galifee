@@ -1,5 +1,5 @@
-﻿using GaliFee.Core.Interfaces;
-using GaliFee.Core.Platforming;
+﻿using Galifee.Core.Interfaces;
+using Galifee.Core.Platforming;
 using System;
 
 namespace Galifee.Components.OsSpecific.Linux

@@ -1,7 +1,7 @@
 ﻿using Avalonia.Markup.Xaml;
 using System;
 
-namespace GaliFee.Core.I18N
+namespace Galifee.Core.I18N
 {
     public class LanguageKey : MarkupExtension
     {

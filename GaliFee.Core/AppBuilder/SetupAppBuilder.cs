@@ -1,4 +1,4 @@
-﻿namespace GaliFee.Core.AppBuilder
+﻿namespace Galifee.Core.AppBuilder
 {
     public class SetupAppBuilder : ISetupAppBuilder
     {

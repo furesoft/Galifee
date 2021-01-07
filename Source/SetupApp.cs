@@ -1,4 +1,4 @@
-﻿using GaliFee.Core;
+﻿using Galifee.Core;
 
 namespace Galifee
 {

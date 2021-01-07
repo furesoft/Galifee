@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GaliFee.Core\GaliFee.Core.csproj" />
+    <ProjectReference Include="..\Galifee.Core\Galifee.Core.csproj" />
   </ItemGroup>
 
 </Project>

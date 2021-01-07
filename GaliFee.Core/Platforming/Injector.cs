@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GaliFee.Core.Platforming
+namespace Galifee.Core.Platforming
 {
     public static class Injector
     {

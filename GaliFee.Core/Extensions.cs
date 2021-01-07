@@ -1,9 +1,9 @@
 ﻿using Avalonia.Metadata;
 using System.IO;
 
-[assembly: XmlnsDefinition("http://furesoft.ml/schemas/galifee", "GaliFee.Core.I18N")]
+[assembly: XmlnsDefinition("http://furesoft.ml/schemas/galifee", "Galifee.Core.I18N")]
 
-namespace GaliFee.Core
+namespace Galifee.Core
 {
     public static class Extensions
     {

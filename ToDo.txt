@@ -8,10 +8,5 @@ extracter
 	-> zip/rar
 	-> msi?
 
-integrated update check with netsprakle?
+integrated update check with netsparkle?
 	updatecheck component
-
-
-fix namespace issue
-	Galifee
-	GalliFee

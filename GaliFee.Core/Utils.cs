@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace GaliFee.Core
+namespace Galifee.Core
 {
     public static class Utils
     {

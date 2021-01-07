@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace GaliFee.Core.Interfaces
+namespace Galifee.Core.Interfaces
 {
     public interface ISetupComponent
     {

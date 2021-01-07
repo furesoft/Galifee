@@ -1,6 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
-using GaliFee.Core;
+using Galifee.Core;
 using System;
 
 namespace Galifee

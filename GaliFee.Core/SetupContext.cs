@@ -1,9 +1,9 @@
-﻿using GaliFee.Core.Interfaces;
-using GaliFee.Core.Platforming;
-using GaliFee.Core.SetupContextStorages;
+﻿using Galifee.Core.Interfaces;
+using Galifee.Core.Platforming;
+using Galifee.Core.SetupContextStorages;
 using System.IO;
 
-namespace GaliFee.Core
+namespace Galifee.Core
 {
     public class SetupContext
     {

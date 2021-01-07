@@ -1,8 +1,8 @@
-﻿using GaliFee.Core.Interfaces;
+﻿using Galifee.Core.Interfaces;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace GaliFee.Core.Extractors
+namespace Galifee.Core.Extractors
 {
     public class ZipExtractor : IResourceExtractor
     {

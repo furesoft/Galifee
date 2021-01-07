@@ -1,6 +1,6 @@
-﻿using GaliFee.Core.AppBuilder;
-using GaliFee.Core.I18N;
-using GaliFee.Core.Loaders;
+﻿using Galifee.Core.AppBuilder;
+using Galifee.Core.I18N;
+using Galifee.Core.Loaders;
 
 namespace Galifee.LanguageResources
 {

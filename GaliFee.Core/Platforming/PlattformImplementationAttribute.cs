@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GaliFee.Core.Platforming
+namespace Galifee.Core.Platforming
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class PlattformImplementationAttribute : Attribute

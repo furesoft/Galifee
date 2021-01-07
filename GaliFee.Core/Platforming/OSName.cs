@@ -1,4 +1,4 @@
-﻿namespace GaliFee.Core.Platforming
+﻿namespace Galifee.Core.Platforming
 {
     public enum OSName
     {

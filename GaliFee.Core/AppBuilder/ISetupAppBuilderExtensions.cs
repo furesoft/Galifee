@@ -1,8 +1,8 @@
-﻿using GaliFee.Core.I18N;
-using GaliFee.Core.Interfaces;
+﻿using Galifee.Core.I18N;
+using Galifee.Core.Interfaces;
 using System.Threading;
 
-namespace GaliFee.Core.AppBuilder
+namespace Galifee.Core.AppBuilder
 {
     public static class ISetupAppBuilderExtensions
     {
