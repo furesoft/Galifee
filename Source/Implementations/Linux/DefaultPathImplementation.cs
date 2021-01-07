@@ -10,5 +10,7 @@ namespace Galifee.Components.OsSpecific.Linux
         public string DesktopPath => Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
         public string DefaultLinkExtension => ".desktop";
+
+        public string DefaultInstallationPath => ""; //ToDo: find installation path for linux
     }
 }

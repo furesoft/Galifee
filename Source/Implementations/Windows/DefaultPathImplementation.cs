@@ -10,5 +10,7 @@ namespace Galifee.Components.OsSpecific.Windows
         public string DesktopPath => Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
         public string DefaultLinkExtension => ".lnk";
+
+        public string DefaultInstallationPath => Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
     }
 }
