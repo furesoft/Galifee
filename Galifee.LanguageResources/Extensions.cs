@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Galifee.Core.I18N;
+using Galifee.Loaders;
 
 namespace Galifee.LanguageResources
 {
@@ -8,6 +7,9 @@ namespace Galifee.LanguageResources
     {
         public static void LoadLanguageResources(this LanguageManager manager)
         {
+            var assembly = typeof(Extensions).Assembly;
+
+            manager.RegisterLanguage("de_DE", new AssemblyResourceLoader("Galifee.LanguageResources.Resources.de_DE.json", assembly));
         }
     }
 }
