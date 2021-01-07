@@ -9,19 +9,30 @@ namespace Galifee.Core.SetupContextStorages
 
         public void RegisterComponent(IVisualComponent component)
         {
-            _components.Add(component);
-            _componentIndices.Add(component, _componentIndices.Count);
+            if (component != null)
+            {
+                _components.Add(component);
+                _componentIndices.Add(component, _componentIndices.Count);
+            }
         }
 
         public void RegisterComponentAfterIndex(IVisualComponent component, int index)
         {
-            _components.Insert(index, component);
-            _componentIndices.Add(component, _componentIndices.Count);
+            if (component != null)
+            {
+                _components.Insert(index, component);
+                _componentIndices.Add(component, _componentIndices.Count);
+            }
         }
 
         public int GetIndexOfComponent(IVisualComponent component)
         {
-            return _componentIndices[component];
+            if (component != null)
+            {
+                return _componentIndices[component];
+            }
+
+            return -1;
         }
     }
 }
