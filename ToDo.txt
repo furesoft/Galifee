@@ -10,3 +10,9 @@ extracter
 
 integrated update check with netsparkle?
 	updatecheck component
+
+
+check if application is installed:
+	if is installed -> set installmode to uninstall
+	if is not installed -> set installmode to install
+	
