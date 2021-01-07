@@ -1,11 +1,9 @@
-﻿using Galifee.Components;
-using Galifee.Core.I18N;
-using Galifee.Core.Interfaces;
-using Galifee.Core.Platforming;
-using Galifee.Core.SetupContextStorages;
+﻿using GaliFee.Core.Interfaces;
+using GaliFee.Core.Platforming;
+using GaliFee.Core.SetupContextStorages;
 using System.IO;
 
-namespace Galifee.Core
+namespace GaliFee.Core
 {
     public class SetupContext
     {

@@ -1,4 +1,4 @@
-﻿namespace Galifee.Core
+﻿namespace GaliFee.Core
 {
     public enum InstallMode
     {

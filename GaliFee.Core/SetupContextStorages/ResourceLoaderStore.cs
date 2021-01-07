@@ -1,9 +1,9 @@
-﻿using Galifee.Core.Interfaces;
+﻿using GaliFee.Core.Interfaces;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifee.Core.SetupContextStorages
+namespace GaliFee.Core.SetupContextStorages
 {
     public class ResourceLoaderStore
     {

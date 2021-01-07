@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
-using Galifee.Core;
-using Galifee.Core.Interfaces;
+using GaliFee.Core;
+using GaliFee.Core.Interfaces;
 using System.Threading.Tasks;
 
 namespace Galifee.Components

@@ -1,4 +1,4 @@
-﻿namespace Galifee.Components
+﻿namespace GaliFee.Core.Interfaces
 {
     public interface IDefaultPaths
     {

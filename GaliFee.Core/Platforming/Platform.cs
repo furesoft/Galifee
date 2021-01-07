@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace Galifee.Core.Platforming
+namespace GaliFee.Core.Platforming
 {
     public static class Platform
     {

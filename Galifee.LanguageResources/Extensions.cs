@@ -1,5 +1,5 @@
-﻿using Galifee.Core.I18N;
-using Galifee.Loaders;
+﻿using GaliFee.Core.I18N;
+using GaliFee.Core.Loaders;
 
 namespace Galifee.LanguageResources
 {

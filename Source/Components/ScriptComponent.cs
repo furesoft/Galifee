@@ -1,5 +1,5 @@
-﻿using Galifee.Core;
-using Galifee.Core.Interfaces;
+﻿using GaliFee.Core;
+using GaliFee.Core.Interfaces;
 using System.IO;
 using System.Threading.Tasks;
 

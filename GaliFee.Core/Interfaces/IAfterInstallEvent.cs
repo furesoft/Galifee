@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Galifee.Core.Interfaces
+namespace GaliFee.Core.Interfaces
 {
     public interface IAfterInstallEvent
     {

@@ -1,8 +1,8 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
-using Galifee.Core;
-using Galifee.Core.I18N;
-using Galifee.Loaders;
+using GaliFee.Core;
+using GaliFee.Core.I18N;
+using GaliFee.Core.Loaders;
 using System;
 
 namespace Galifee
@@ -11,15 +11,28 @@ namespace Galifee
     {
         public static SetupContext Context = new SetupContext();
 
+        private static bool _isInitialized = false;
+
+        public static void Init()
+        {
+            LanguageManager.Instance.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(Runtime).Assembly));
+            LanguageManager.Instance.SetLanguage("en_EN");
+
+            _isInitialized = true;
+        }
+
         public static void Run(string[] args)
         {
+            if (!_isInitialized)
+            {
+                throw new Exception("Runtime has to be Initialized before Configuration and Running the runtime!!");
+            }
+
             var cli = new CommandlineArguments(args);
 
             var mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
 
             Context.Properties.SetProperty("mode", mode);
-            LanguageManager.Instance.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(Runtime).Assembly));
-            LanguageManager.Instance.SetLanguage("en_EN");
 
             if (!cli.HasOption("silent"))
             {

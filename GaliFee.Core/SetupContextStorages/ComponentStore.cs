@@ -1,7 +1,7 @@
-﻿using Galifee.Core.Interfaces;
+﻿using GaliFee.Core.Interfaces;
 using System.Collections.Generic;
 
-namespace Galifee.Core.SetupContextStorages
+namespace GaliFee.Core.SetupContextStorages
 {
     public class ComponentStore
     {

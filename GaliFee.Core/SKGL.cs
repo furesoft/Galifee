@@ -12,7 +12,7 @@
 
 using System.Numerics;
 
-namespace Galifee.Core
+namespace GaliFee.Core
 {
     #region "S E R I A L  K E Y  G E N E R A T I N G  L I B R A R Y"
 
