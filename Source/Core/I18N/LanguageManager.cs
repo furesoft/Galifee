@@ -1,4 +1,5 @@
 ﻿using Galifee.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -25,6 +26,14 @@ namespace Galifee.Core.I18N
             sr.Close();
 
             return obj;
+        }
+
+        public void SetLanguage(string id)
+        {
+            if (_languages.ContainsKey(id))
+            {
+                CurrentLanguage = _languages[id];
+            }
         }
 
         public string GetValue(string key)

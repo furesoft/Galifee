@@ -18,6 +18,7 @@ namespace Galifee
 
             Context.Properties.SetProperty("mode", mode);
             Context.LanguageManager.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(SetupContext).Assembly));
+            Context.LanguageManager.SetLanguage("en_EN");
 
             if (!cli.HasOption("silent"))
             {
