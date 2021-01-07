@@ -12,6 +12,10 @@ namespace Galifee.UI
             DownloaderComponent = downloaderComponent;
         }
 
+        public DownloaderUIPanel()
+        {
+        }
+
         public DownloaderComponent DownloaderComponent { get; }
 
         private void InitializeComponent()

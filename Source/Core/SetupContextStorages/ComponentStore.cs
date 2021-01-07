@@ -5,7 +5,7 @@ namespace Galifee.Core.SetupContextStorages
     public class ComponentStore
     {
         private List<IVisualComponent> _components = new List<IVisualComponent>();
-        private Dictionary<IVisualComponent, int> _componentIndices = new Dictionary<ISetuIVisualComponentpComponent, int>();
+        private Dictionary<IVisualComponent, int> _componentIndices = new Dictionary<IVisualComponent, int>();
 
         public void RegisterComponent(IVisualComponent component)
         {

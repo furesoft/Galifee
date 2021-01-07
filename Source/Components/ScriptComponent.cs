@@ -22,7 +22,7 @@ namespace Galifee.Components
             var result = await Evaluate();
         }
 
-        private async Task<JsValue> Evaluate()
+        private async Task<object> Evaluate()
         {
             var sr = new StreamReader(await Loader.GetStream());
 

@@ -13,3 +13,11 @@ integrated update check with netsprakle?
 
 IInstallAction for installation process
 ISetupComponent for ui tabs for configuration
+
+I18N
+	MarkupExtension
+	LanguageStore
+		Language file from json
+		register language
+	add english as default language
+	library with some languages

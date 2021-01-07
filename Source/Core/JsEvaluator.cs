@@ -2,17 +2,19 @@
 {
     public static class JsEvaluator
     {
-        private static Context Context;
+        // private static Context Context;
 
         public static void Init()
         {
             //init js engine
-            Context = new Context();
+            //Context = new Context();
         }
 
-        public static JsValue Evaluate(string source)
+        public static object Evaluate(string source)
         {
-            return Context.Eval(source);
+            //return Context.Eval(source);
+
+            return null;
         }
     }
 }
