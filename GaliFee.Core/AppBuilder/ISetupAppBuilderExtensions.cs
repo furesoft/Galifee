@@ -1,5 +1,6 @@
 ﻿using Galifee.Core.I18N;
 using Galifee.Core.Interfaces;
+using System.Reflection;
 using System.Threading;
 
 namespace Galifee.Core.AppBuilder
@@ -38,6 +39,16 @@ namespace Galifee.Core.AppBuilder
         {
             LanguageManager.Instance.SetLanguage(id);
             builder.SetProperty(NamingConstants.CurrentLanguageName, id);
+
+            return builder;
+        }
+
+        public static ISetupAppBuilder AddMetadata(this ISetupAppBuilder builder, Assembly assembly)
+        {
+            var name = assembly.GetName();
+
+            builder.SetProperty(NamingConstants.AppName, name.Name);
+            builder.SetProperty(NamingConstants.AppVersion, name.Version.ToString());
 
             return builder;
         }
