@@ -1,4 +1,4 @@
-﻿namespace Galifee.Core
+﻿namespace Galifee.Core.Interfaces
 {
     public interface IDependency
     {

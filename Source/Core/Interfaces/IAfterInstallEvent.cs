@@ -1,7 +1,6 @@
-﻿using Avalonia.Controls;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Galifee.Core
+namespace Galifee.Core.Interfaces
 {
     public interface IAfterInstallEvent
     {

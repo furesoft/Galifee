@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace Galifee.Core
+namespace Galifee.Core.Interfaces
 {
     public interface IVisualComponent
     {

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Galifee.Core.Interfaces;
 using System.Collections.Generic;
 
 namespace Galifee.Core

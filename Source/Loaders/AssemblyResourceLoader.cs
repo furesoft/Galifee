@@ -1,4 +1,4 @@
-﻿using Galifee.Core;
+﻿using Galifee.Core.Interfaces;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;

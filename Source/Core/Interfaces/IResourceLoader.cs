@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifee.Core
+namespace Galifee.Core.Interfaces
 {
     public interface IResourceLoader
     {
