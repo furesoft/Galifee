@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TestSetup": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode install"
+    }
+  }
+}
