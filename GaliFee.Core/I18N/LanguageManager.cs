@@ -1,5 +1,4 @@
 ﻿using Galifee.Core.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -10,6 +9,8 @@ namespace Galifee.Core.I18N
         private Dictionary<string, Language> _languages = new Dictionary<string, Language>();
 
         public Language CurrentLanguage;
+
+        public static LanguageManager Instance = new LanguageManager();
 
         public async void RegisterLanguage(string id, IResourceLoader contentLoader)
         {

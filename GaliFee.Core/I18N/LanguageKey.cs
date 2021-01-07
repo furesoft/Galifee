@@ -14,7 +14,7 @@ namespace Galifee.Core.I18N
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            return Runtime.Context.LanguageManager.GetValue(Key);
+            return LanguageManager.Instance.GetValue(Key);
         }
     }
 }

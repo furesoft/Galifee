@@ -17,8 +17,6 @@ namespace Galifee.Core
 
         public Terminal Shell = new Terminal();
 
-        public LanguageManager LanguageManager = new LanguageManager();
-
         public IDefaultPaths Paths;
         private string _tmpDir;
 

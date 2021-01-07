@@ -60,7 +60,7 @@ namespace Galifee.Core
             }
         }
 
-        internal void Upgrade(SetupContext context)
+        public void Upgrade(SetupContext context)
         {
             foreach (var item in _components)
             {

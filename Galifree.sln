@@ -9,12 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication", "TestAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSetup", "TestSetup\TestSetup.csproj", "{E5741560-5C0E-4637-8BF1-D674D709A999}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gallifee.Dependencies", "Gallifee.Dependencies\Gallifee.Dependencies.csproj", "{CB4A201F-F788-490C-AA7A-43BCC25341A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galifee.Dependencies", "Gallifee.Dependencies\Galifee.Dependencies.csproj", "{CB4A201F-F788-490C-AA7A-43BCC25341A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB9AEB4E-F355-40CC-8610-E1879C80D520}"
 	ProjectSection(SolutionItems) = preProject
 		ToDo.txt = ToDo.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galifee.LanguageResources", "Galifee.LanguageResources\Galifee.LanguageResources.csproj", "{9AE2BF02-93D1-48C5-8338-3B191E26A22E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaliFee.Core", "GaliFee.Core\GaliFee.Core.csproj", "{A2477D14-956A-4987-B8DF-35223A40B0BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB4A201F-F788-490C-AA7A-43BCC25341A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE2BF02-93D1-48C5-8338-3B191E26A22E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE2BF02-93D1-48C5-8338-3B191E26A22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE2BF02-93D1-48C5-8338-3B191E26A22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE2BF02-93D1-48C5-8338-3B191E26A22E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2477D14-956A-4987-B8DF-35223A40B0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2477D14-956A-4987-B8DF-35223A40B0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2477D14-956A-4987-B8DF-35223A40B0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2477D14-956A-4987-B8DF-35223A40B0BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

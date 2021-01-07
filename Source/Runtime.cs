@@ -1,6 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
 using Galifee.Core;
+using Galifee.Core.I18N;
 using Galifee.Loaders;
 using System;
 
@@ -17,8 +18,8 @@ namespace Galifee
             var mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
 
             Context.Properties.SetProperty("mode", mode);
-            Context.LanguageManager.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(SetupContext).Assembly));
-            Context.LanguageManager.SetLanguage("en_EN");
+            LanguageManager.Instance.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(Runtime).Assembly));
+            LanguageManager.Instance.SetLanguage("en_EN");
 
             if (!cli.HasOption("silent"))
             {

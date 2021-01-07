@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using Avalonia.Metadata;
+using System.IO;
+
+[assembly: XmlnsDefinition("http://furesoft.ml/schemas/galifee", "Galifee.Core.I18N")]
 
 namespace Galifee.Core
 {
