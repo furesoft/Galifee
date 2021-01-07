@@ -16,6 +16,18 @@ namespace Galifee.Core.SetupContextStorages
             return null;
         }
 
+        public object this[string key]
+        {
+            get
+            {
+                return GetProperty(key);
+            }
+            set
+            {
+                SetProperty(key, value);
+            }
+        }
+
         public void SetProperty(string key, object value)
         {
             if (_properties.ContainsKey(key))

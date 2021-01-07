@@ -6,5 +6,6 @@
         public static string AppVersion = "AppVersion";
         public static string CurrentLanguageName = "CurrentLanguageName";
         public static string CreateDesktopShortCut = "CreateDesktopShortcut";
+        public static string InstallationPath = "InstallationPath";
     }
 }

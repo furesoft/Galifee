@@ -3,5 +3,6 @@
     public interface IDefaultPaths
     {
         string DesktopPath { get; }
+        string DefaultLinkExtension { get; }
     }
 }
