@@ -8,5 +8,7 @@ namespace Galifee.Components.OsSpecific.Windows
     public class DefaultPathImplementation : IDefaultPaths
     {
         public string DesktopPath => Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+
+        public string DefaultLinkExtension => ".lnk";
     }
 }

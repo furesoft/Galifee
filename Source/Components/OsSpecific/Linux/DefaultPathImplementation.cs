@@ -8,5 +8,7 @@ namespace Galifee.Components.OsSpecific.Linux
     public class DefaultPathImplementation : IDefaultPaths
     {
         public string DesktopPath => Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+
+        public string DefaultLinkExtension => ".desktop";
     }
 }
