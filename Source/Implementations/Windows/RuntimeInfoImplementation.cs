@@ -5,7 +5,7 @@ using System;
 
 namespace Galifee.Implementations.Windows
 {
-    [PlattformImplementation(OSName.Windows)]
+    [PlatformImplementation(OSName.Windows)]
     public class RuntimeInfoImplementation : IRuntimeInfo
     {
         public bool IsApplicationInstalled(SetupContext context)

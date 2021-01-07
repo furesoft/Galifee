@@ -3,9 +3,9 @@
 namespace Galifee.Core.Platforming
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public class PlattformImplementationAttribute : Attribute
+    public class PlatformImplementationAttribute : Attribute
     {
-        public PlattformImplementationAttribute(OSName platform)
+        public PlatformImplementationAttribute(OSName platform)
         {
             Platform = platform;
         }

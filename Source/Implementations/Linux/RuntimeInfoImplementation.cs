@@ -5,7 +5,7 @@ using System;
 
 namespace Galifee.Implementations.Linux
 {
-    [PlattformImplementation(OSName.Linux)]
+    [PlatformImplementation(OSName.Linux)]
     public class RuntimeInfoImplementation : IRuntimeInfo
     {
         public bool IsApplicationInstalled(SetupContext context)

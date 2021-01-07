@@ -4,7 +4,7 @@ using GaliFee.Core.Interfaces;
 
 namespace Galifee.Components.OsSpecific.Linux
 {
-    [PlattformImplementation(OSName.Linux)]
+    [PlatformImplementation(OSName.Linux)]
     public class DesktopLinkImplementation : IDesktopLink
     {
         public void CreateDesktopLink(SetupContext context, string filename)

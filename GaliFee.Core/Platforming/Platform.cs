@@ -29,7 +29,7 @@ namespace Galifee.Core.Platforming
                 {
                     if (typeof(T).IsAssignableFrom(t) || t.IsInstanceOfType(typeof(T)))
                     {
-                        var attr = t.GetCustomAttribute<PlattformImplementationAttribute>();
+                        var attr = t.GetCustomAttribute<PlatformImplementationAttribute>();
                         if (attr != null)
                         {
                             if (attr.Platform == currentPlatform)
