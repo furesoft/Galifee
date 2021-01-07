@@ -9,7 +9,6 @@ namespace Galifee.Components.OsSpecific.Windows
     {
         public void CreateDesktopLink(SetupContext context, string filename)
         {
-            throw new System.NotImplementedException();
         }
     }
 }
