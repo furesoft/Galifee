@@ -13,7 +13,12 @@ namespace Galifee
         {
             var cli = new CommandlineArguments(args);
 
-            var mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
+            InstallMode mode = InstallMode.Install;
+
+            if (cli.GetValue<string>("mode") != null)
+            {
+                mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
+            }
 
             Context.Properties.SetProperty("mode", mode);
 
