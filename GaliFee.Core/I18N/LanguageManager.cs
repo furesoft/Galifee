@@ -1,4 +1,5 @@
 ﻿using GaliFee.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -52,6 +53,11 @@ namespace GaliFee.Core.I18N
             }
 
             return "No Language set";
+        }
+
+        public bool Contains(string id)
+        {
+            return _languages.ContainsKey(id);
         }
     }
 }

@@ -12,11 +12,6 @@ integrated update check with netsprakle?
 	updatecheck component
 
 
-I18N
-	automatic language set, when language is available?
-
-Wrapper for SetupContext: SetupAppBuilder
-
 fix namespace issue
 	Galifee
 	GalliFee

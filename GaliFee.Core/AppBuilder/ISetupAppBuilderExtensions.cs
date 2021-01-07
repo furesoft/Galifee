@@ -1,5 +1,6 @@
 ﻿using GaliFee.Core.I18N;
 using GaliFee.Core.Interfaces;
+using System.Threading;
 
 namespace GaliFee.Core.AppBuilder
 {
@@ -37,6 +38,22 @@ namespace GaliFee.Core.AppBuilder
         {
             LanguageManager.Instance.SetLanguage(id);
             builder.SetProperty(NamingConstants.CurrentLanguageName, id);
+
+            return builder;
+        }
+
+        public static ISetupAppBuilder EnableAutoLanguage(this ISetupAppBuilder builder)
+        {
+            var culture = Thread.CurrentThread.CurrentCulture.Name.Replace("-", "_");
+
+            if (LanguageManager.Instance.Contains(culture))
+            {
+                builder.SetLanguage(culture);
+            }
+            else
+            {
+                builder.SetLanguage("en_EN");
+            }
 
             return builder;
         }
