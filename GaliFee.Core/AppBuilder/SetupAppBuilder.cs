@@ -2,7 +2,13 @@
 {
     public class SetupAppBuilder : ISetupAppBuilder
     {
-        public SetupContext Context => new SetupContext();
+        private SetupContext _context;
+        public SetupContext Context => _context;
+
+        public SetupAppBuilder()
+        {
+            _context = new SetupContext();
+        }
 
         public static ISetupAppBuilder Configure()
         {

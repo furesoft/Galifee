@@ -3,6 +3,7 @@ using Galifee.LanguageResources;
 using Galifee.Core;
 using Galifee.Core.AppBuilder;
 using Galifee.Core.Loaders;
+using Galifee.Components;
 
 namespace TestSetup
 {
@@ -13,7 +14,7 @@ namespace TestSetup
             var app = SetupAppBuilder.Configure()
                 .SetProperty(NamingConstants.AppName, "TestApplication")
                 .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
-                .AddComponent(null)
+                .AddAction(new CreateDesktopLinkAction())
                 .LoadDefaultLanguages()
                 .EnableAutoLanguage()
                 .Build();
