@@ -15,7 +15,5 @@ IInstallAction for installation process
 ISetupComponent for ui tabs for configuration
 
 I18N
-	MarkupExtension
-
 	library with some languages
 	automatic language set, when language is available?
