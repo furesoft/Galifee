@@ -16,6 +16,8 @@ namespace TestSetup
             context.Components.RegisterComponent(null);
             context.ResourceLoaders.RegisterResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly));
 
+            context.Properties.SetProperty(NamingConstants.AppName, "TestApplication");
+
             LanguageManager.Instance.LoadLanguageResources();
 
             LanguageManager.Instance.SetLanguage("de_DE");
