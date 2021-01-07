@@ -1,7 +1,7 @@
 ﻿using Galifee;
 using Galifee.LanguageResources;
 using GaliFee.Core;
-using GaliFee.Core.I18N;
+using GaliFee.Core.AppBuilder;
 using GaliFee.Core.Loaders;
 
 namespace TestSetup
@@ -10,18 +10,15 @@ namespace TestSetup
     {
         public static void Main(string[] args)
         {
-            Runtime.Init();
+            var app = SetupAppBuilder.Configure()
+                .SetProperty(NamingConstants.AppName, "TestApplication")
+                .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
+                .AddComponent(null)
+                .LoadDefaultLanguages()
+                .SetLanguage("de_DE")
+                .Build();
 
-            var context = new SetupContext();
-            context.Components.RegisterComponent(null);
-            context.ResourceLoaders.RegisterResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly));
-
-            context.Properties.SetProperty(NamingConstants.AppName, "TestApplication");
-
-            LanguageManager.Instance.LoadLanguageResources();
-
-            LanguageManager.Instance.SetLanguage("de_DE");
-            Runtime.Run(args);
+            app.Run(args);
         }
     }
 }

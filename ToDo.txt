@@ -11,9 +11,12 @@ extracter
 integrated update check with netsprakle?
 	updatecheck component
 
-IInstallAction for installation process
-ISetupComponent for ui tabs for configuration
 
 I18N
-	library with some languages
 	automatic language set, when language is available?
+
+Wrapper for SetupContext: SetupAppBuilder
+
+fix namespace issue
+	Galifee
+	GalliFee
