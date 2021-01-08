@@ -59,11 +59,13 @@ namespace Galifee.Core.AppBuilder
 
             if (LanguageManager.Instance.Contains(culture))
             {
+                builder.SetProperty(NamingConstants.UseAutomaticLanguage, true);
                 builder.SetLanguage(culture);
             }
             else
             {
                 builder.SetLanguage("en_EN");
+                builder.SetProperty(NamingConstants.UseAutomaticLanguage, false);
             }
 
             return builder;

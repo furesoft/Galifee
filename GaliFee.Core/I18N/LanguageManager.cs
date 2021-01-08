@@ -1,13 +1,19 @@
 ﻿using Galifee.Core.Interfaces;
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Galifee.Core.I18N
 {
     public class LanguageManager
     {
         private Dictionary<string, Language> _languages = new Dictionary<string, Language>();
+
+        public IEnumerable<string> GetNames()
+        {
+            return _languages.Values.Select(_ => _["name"]);
+        }
 
         public Language CurrentLanguage;
 
