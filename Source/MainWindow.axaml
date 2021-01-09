@@ -3,16 +3,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i18n="http://furesoft.ml/schemas/galifee"
+        xmlns:commands="clr-namespace:Galifee.UI.Commands"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        Width="600" Height="450" WindowStartupLocation="CenterScreen"
+        MinWidth="600" MinHeight="450" WindowStartupLocation="CenterScreen"
+        MaxWidth="600" MaxHeight="450"
         x:Class="Galifee.MainWindow"
         Title="Setup">
-  <DockPanel LastChildFill="True" Margin="10">
-    <Carousel />
+  <Grid Margin="5" RowDefinitions="*,35">
+    <Carousel x:Name="carousel" Width="540">
+      <TextBlock Text="Page 1" />
+      <TextBlock Text="Page 2" />
+      <TextBlock Text="Page 3" />
+      <TextBlock Text="Page 4" />
+    </Carousel>
 
-    <StackPanel Spacing="5" Orientation="Horizontal" DockPanel.Dock="Bottom" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+    <StackPanel Spacing="5" Orientation="Horizontal" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
       <Button Content="{i18n:LanguageKey 'previos'}" />
-      <Button Content="{i18n:LanguageKey 'next'}" />
+      <Button Content="{i18n:LanguageKey 'next'}" Command="{commands:NextCommand}" CommandParameter="{Binding ElementName=carousel}" />
     </StackPanel>
-  </DockPanel>
+  </Grid>
 </Window>
