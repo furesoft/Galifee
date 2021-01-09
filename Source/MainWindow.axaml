@@ -18,7 +18,7 @@
     </Carousel>
 
     <StackPanel Spacing="5" Orientation="Horizontal" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-      <Button Content="{i18n:LanguageKey 'previos'}" />
+      <Button Content="{i18n:LanguageKey 'previos'}" Command="{commands:PreviousCommand}" CommandParameter="{Binding ElementName=carousel}" />
       <Button Content="{i18n:LanguageKey 'next'}" Command="{commands:NextCommand}" CommandParameter="{Binding ElementName=carousel}" />
     </StackPanel>
   </Grid>
