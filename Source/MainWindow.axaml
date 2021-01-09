@@ -4,7 +4,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i18n="http://furesoft.ml/schemas/galifee"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="600" Height="450" WindowStartupLocation="CenterScreen"
         x:Class="Galifee.MainWindow"
-        Title="MainWindow">
-  <Button Content="{i18n:LanguageKey 'next'}" />
+        Title="Setup">
+  <DockPanel LastChildFill="True" Margin="10">
+    <Carousel />
+
+    <StackPanel Spacing="5" Orientation="Horizontal" DockPanel.Dock="Bottom" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+      <Button Content="{i18n:LanguageKey 'previos'}" />
+      <Button Content="{i18n:LanguageKey 'next'}" />
+    </StackPanel>
+  </DockPanel>
 </Window>
