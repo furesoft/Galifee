@@ -27,12 +27,18 @@ namespace Galifee
                 {
                     desktop.MainWindow = new MainWindow();
                     desktop.MainWindow.Activated += MainWindow_Activated;
+                    desktop.Exit += Desktop_Exit;
                 }
 
                 desktop.ShutdownMode = Avalonia.Controls.ShutdownMode.OnLastWindowClose;
             }
 
             base.OnFrameworkInitializationCompleted();
+        }
+
+        private void Desktop_Exit(object sender, ControlledApplicationLifetimeExitEventArgs e)
+        {
+            //ToDo: show a warning message on exit
         }
 
         private void MainWindow_Activated(object sender, System.EventArgs e)

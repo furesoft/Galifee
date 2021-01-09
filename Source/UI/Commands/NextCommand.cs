@@ -1,6 +1,7 @@
 ﻿using Avalonia.Animation;
 using Avalonia.Collections;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Galifee.Core.I18N;
 using System;
@@ -23,6 +24,8 @@ namespace Galifee.UI.Commands
         {
         }
 
+        private bool _isFinished = false;
+
         public bool CanExecute(object parameter)
         {
             if (parameter is Carousel car)
@@ -41,7 +44,14 @@ namespace Galifee.UI.Commands
 
                     Target.Content = LanguageManager.Instance.GetValue("finish");
 
-                    return false;
+                    if (_isFinished)
+                    {
+                        ((IClassicDesktopStyleApplicationLifetime)App.Current.ApplicationLifetime).Shutdown();
+                    }
+
+                    _isFinished = true;
+
+                    return true;
                 }
             }
 
