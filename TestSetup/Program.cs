@@ -17,7 +17,7 @@ namespace TestSetup
                 .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
                 .AddAction(new CreateDesktopLinkAction())
                 .LoadDefaultLanguages()
-                //.EnableAutoLanguage()
+                .EnableAutoLanguage()
                 .Build();
 
             app.Run(args);

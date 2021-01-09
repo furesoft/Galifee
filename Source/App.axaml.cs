@@ -27,6 +27,8 @@ namespace Galifee
                 {
                     desktop.MainWindow = new MainWindow();
                 }
+
+                desktop.ShutdownMode = Avalonia.Controls.ShutdownMode.OnLastWindowClose;
             }
 
             base.OnFrameworkInitializationCompleted();

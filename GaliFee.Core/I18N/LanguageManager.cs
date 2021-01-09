@@ -1,4 +1,5 @@
 ﻿using Galifee.Core.Interfaces;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -24,6 +25,21 @@ namespace Galifee.Core.I18N
             if (!_languages.ContainsKey(id))
             {
                 _languages.Add(id, LoadLanguageFromStream(await contentLoader.GetStream()));
+            }
+        }
+
+        public void SetLanguageFromName(string name)
+        {
+            foreach (var l in _languages)
+            {
+                var lang = l.Value;
+
+                var lName = lang["name"];
+
+                if (lName == name)
+                {
+                    SetLanguage(l.Key);
+                }
             }
         }
 
