@@ -1,7 +1,6 @@
 ﻿using Galifee.Core.AppBuilder;
 using Galifee.Core.I18N;
 using Galifee.Core.Loaders;
-using System.Linq;
 
 namespace Galifee
 {

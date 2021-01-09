@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Galifee.Core.SetupContextStorages
 {
@@ -26,6 +27,18 @@ namespace Galifee.Core.SetupContextStorages
             {
                 SetProperty(key, value);
             }
+        }
+
+        public T GetProperty<T>(string key)
+        {
+            var value = GetProperty(key);
+
+            if (value != null)
+            {
+                return (T)value;
+            }
+
+            return default;
         }
 
         public void SetProperty(string key, object value)

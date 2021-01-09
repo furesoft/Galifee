@@ -19,7 +19,7 @@ namespace Galifee
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                if (LanguageManager.Instance.GetNames().Count() > 1 && (bool)Runtime.Context.Properties[NamingConstants.UseAutomaticLanguage])
+                if (LanguageManager.Instance.GetNames().Count() > 1 && !Runtime.Context.Properties.GetProperty<bool>(NamingConstants.UseAutomaticLanguage))
                 {
                     desktop.MainWindow = new LanguageSelectorWindow();
                 }
