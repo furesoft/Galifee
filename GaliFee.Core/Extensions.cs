@@ -2,6 +2,7 @@
 using System.IO;
 
 [assembly: XmlnsDefinition("http://furesoft.ml/schemas/galifee", "Galifee.Core.I18N")]
+[assembly: XmlnsDefinition("http://furesoft.ml/schemas/galifee", "Galifee.Core")]
 
 namespace Galifee.Core
 {

@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <AssemblyName>Galifee.Core</AssemblyName>
+    <RootNamespace>Galifee.Core</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

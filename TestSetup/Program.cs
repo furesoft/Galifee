@@ -16,6 +16,7 @@ namespace TestSetup
                 .SetProperty(NamingConstants.AppVersion, "1.0.0")
                 .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
                 .AddAction(new CreateDesktopLinkAction())
+                .AddComponent(new DownloaderComponent())
                 .LoadDefaultLanguages()
                 .EnableAutoLanguage()
                 .Build();
