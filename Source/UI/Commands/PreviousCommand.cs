@@ -12,7 +12,23 @@ namespace Galifee.UI.Commands
 
         public bool CanExecute(object parameter)
         {
-            //ToDo: implement condition for previous button
+            if (parameter is Carousel car)
+            {
+                if (car.SelectedIndex == 0)
+                {
+                    car.PropertyChanged += (s, e) =>
+                      {
+                          if (e.Property.Name == nameof(car.SelectedIndex))
+                          {
+                              CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+                          }
+                      };
+
+                    return false;
+                }
+            }
+
+            //CanExecuteChanged?.Invoke(this, EventArgs.Empty);
 
             return true;
         }
@@ -21,7 +37,6 @@ namespace Galifee.UI.Commands
         {
             if (parameter is Carousel car)
             {
-                car.PageTransition = new PageSlide(TimeSpan.FromMilliseconds(400));
                 car.Previous();
             }
         }

@@ -1,6 +1,8 @@
 ﻿using Avalonia;
+using Avalonia.Animation;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using System;
 
 namespace Galifee
 {
@@ -17,6 +19,15 @@ namespace Galifee
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
+            this.Activated += MainWindow_Activated;
+        }
+
+        private void MainWindow_Activated(object sender, System.EventArgs e)
+        {
+            var carousel = this.Find<Carousel>("carousel");
+
+            carousel.PageTransition = new PageSlide(TimeSpan.FromMilliseconds(150));
         }
     }
 }
