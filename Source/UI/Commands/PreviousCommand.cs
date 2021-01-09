@@ -12,7 +12,7 @@ namespace Galifee.UI.Commands
 
         public bool CanExecute(object parameter)
         {
-            //ToDo: implement condition for next button
+            //ToDo: implement condition for previous button
 
             return true;
         }

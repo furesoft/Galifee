@@ -5,7 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Galifee.UI.DownloaderUIPanel">
   <StackPanel Orientation="Vertical">
-    <TextBox Text="Downloading ..." />
-    <ProgressBar />
+    <TextBlock Text="Downloading ..." />
+    <ProgressBar Value="50" />
   </StackPanel>
 </UserControl>
