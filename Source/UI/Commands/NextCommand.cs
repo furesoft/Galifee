@@ -32,16 +32,17 @@ namespace Galifee.UI.Commands
             {
                 var items = (AvaloniaList<object>)car.Items;
 
+                //ToDo: need to rethink for better performance
+                car.PropertyChanged += (s, e) =>
+                {
+                    if (e.Property.Name == nameof(car.SelectedIndex))
+                    {
+                        CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+                    }
+                };
+
                 if (car.SelectedIndex + 1 == items.Count)
                 {
-                    car.PropertyChanged += (s, e) =>
-                    {
-                        if (e.Property.Name == nameof(car.SelectedIndex))
-                        {
-                            CanExecuteChanged?.Invoke(this, EventArgs.Empty);
-                        }
-                    };
-
                     Target.Content = LanguageManager.Instance.GetValue("finish");
 
                     if (_isFinished)

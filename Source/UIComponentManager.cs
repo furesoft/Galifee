@@ -14,6 +14,12 @@ namespace Galifee
             if (carousel)
             {
                 _carousel = target;
+
+                //add controls to carousel after initialisation
+                foreach (var component in Runtime.Context.Components)
+                {
+                    UIComponentManager.RegisterComponent(component);
+                }
             }
         }
 

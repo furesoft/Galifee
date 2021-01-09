@@ -26,7 +26,6 @@ namespace Galifee
                 else
                 {
                     desktop.MainWindow = new MainWindow();
-                    desktop.MainWindow.Activated += MainWindow_Activated;
                     desktop.Exit += Desktop_Exit;
                 }
 
@@ -39,14 +38,6 @@ namespace Galifee
         private void Desktop_Exit(object sender, ControlledApplicationLifetimeExitEventArgs e)
         {
             //ToDo: show a warning message on exit
-        }
-
-        private void MainWindow_Activated(object sender, System.EventArgs e)
-        {
-            foreach (var component in Runtime.Context.Components)
-            {
-                UIComponentManager.RegisterComponent(component);
-            }
         }
     }
 }
