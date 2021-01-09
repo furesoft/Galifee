@@ -26,12 +26,21 @@ namespace Galifee
                 else
                 {
                     desktop.MainWindow = new MainWindow();
+                    desktop.MainWindow.Activated += MainWindow_Activated;
                 }
 
                 desktop.ShutdownMode = Avalonia.Controls.ShutdownMode.OnLastWindowClose;
             }
 
             base.OnFrameworkInitializationCompleted();
+        }
+
+        private void MainWindow_Activated(object sender, System.EventArgs e)
+        {
+            foreach (var component in Runtime.Context.Components)
+            {
+                UIComponentManager.RegisterComponent(component);
+            }
         }
     }
 }

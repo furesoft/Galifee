@@ -1,9 +1,10 @@
 ﻿using Galifee.Core.Interfaces;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Galifee.Core.SetupContextStorages
 {
-    public class ComponentStore
+    public class ComponentStore : IEnumerable<IVisualComponent>
     {
         private List<IVisualComponent> _components = new List<IVisualComponent>();
         private Dictionary<IVisualComponent, int> _componentIndices = new Dictionary<IVisualComponent, int>();
@@ -34,6 +35,16 @@ namespace Galifee.Core.SetupContextStorages
             }
 
             return -1;
+        }
+
+        public IEnumerator<IVisualComponent> GetEnumerator()
+        {
+            return _components.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return _components.GetEnumerator();
         }
     }
 }
