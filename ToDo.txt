@@ -15,4 +15,11 @@ integrated update check with netsparkle?
 check if application is installed:
 	if is installed -> set installmode to uninstall
 	if is not installed -> set installmode to install
+
+load appbuilder from xml file
+	<setup>
+		<properties>
+			
+		</properties>
+	</setup>
 	
