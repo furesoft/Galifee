@@ -1,9 +1,9 @@
 ﻿using Avalonia.Collections;
 using Avalonia.Controls;
-using Galifee.Core.Interfaces;
+using Galifrei.Core.Interfaces;
 using System.Collections.ObjectModel;
 
-namespace Galifee
+namespace Galifrei
 {
     public static class UIComponentManager
     {

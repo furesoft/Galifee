@@ -1,9 +1,9 @@
-﻿using Galifee;
-using Galifee.LanguageResources;
-using Galifee.Core;
-using Galifee.Core.AppBuilder;
-using Galifee.Core.Loaders;
-using Galifee.Components;
+﻿using Galifrei;
+using Galifrei.LanguageResources;
+using Galifrei.Core;
+using Galifrei.Core.AppBuilder;
+using Galifrei.Core.Loaders;
+using Galifrei.Components;
 
 namespace TestSetup
 {

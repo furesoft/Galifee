@@ -1,8 +1,8 @@
-﻿using Galifee.Core.AppBuilder;
-using Galifee.Core.I18N;
-using Galifee.Core.Loaders;
+﻿using Galifrei.Core.AppBuilder;
+using Galifrei.Core.I18N;
+using Galifrei.Core.Loaders;
 
-namespace Galifee
+namespace Galifrei
 {
     public static class ISetupAppBuilderExtensions
     {
@@ -10,7 +10,7 @@ namespace Galifee
         {
             if (!LanguageManager.Instance.Contains("en_EN"))
             {
-                LanguageManager.Instance.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifee.Resources.en_EN.json", typeof(Runtime).Assembly));
+                LanguageManager.Instance.RegisterLanguage("en_EN", new AssemblyResourceLoader("Galifrei.Resources.en_EN.json", typeof(Runtime).Assembly));
             }
 
             if (LanguageManager.Instance.CurrentLanguage == null)

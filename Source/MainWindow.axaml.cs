@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System;
 
-namespace Galifee
+namespace Galifrei
 {
     public class MainWindow : Window
     {

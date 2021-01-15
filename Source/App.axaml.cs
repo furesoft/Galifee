@@ -1,12 +1,12 @@
 ﻿using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using Galifee.Core;
-using Galifee.Core.I18N;
-using Galifee.UI.Windows;
+using Galifrei.Core;
+using Galifrei.Core.I18N;
+using Galifrei.UI.Windows;
 using System.Linq;
 
-namespace Galifee
+namespace Galifrei
 {
     public class App : Application
     {

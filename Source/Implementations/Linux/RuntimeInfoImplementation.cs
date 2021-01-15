@@ -1,9 +1,9 @@
-﻿using Galifee.Core;
-using Galifee.Core.Platforming;
+﻿using Galifrei.Core;
+using Galifrei.Core.Platforming;
 using GaliFee.Core.Interfaces;
 using System;
 
-namespace Galifee.Implementations.Linux
+namespace Galifrei.Implementations.Linux
 {
     [PlatformImplementation(OSName.Linux)]
     public class RuntimeInfoImplementation : IRuntimeInfo

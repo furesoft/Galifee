@@ -1,12 +1,12 @@
-﻿using Galifee.Core;
-using Galifee.Core.Interfaces;
-using Galifee.Core.Platforming;
+﻿using Galifrei.Core;
+using Galifrei.Core.Interfaces;
+using Galifrei.Core.Platforming;
 using GaliFee.Core.Interfaces;
 using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifee.Components
+namespace Galifrei.Components
 {
     public class CreateDesktopLinkAction : ISetupComponent
     {

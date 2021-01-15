@@ -4,8 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         Width="250" Height="150"
-        x:Class="Galifee.UI.Windows.LanguageSelectorWindow"
-        xmlns:commands="clr-namespace:Galifee.UI.Commands"
+        x:Class="Galifrei.UI.Windows.LanguageSelectorWindow"
+        xmlns:commands="clr-namespace:Galifrei.UI.Commands"
         xmlns:i18n="http://furesoft.ml/schemas/galifee"
         Title="Setup" WindowStartupLocation="CenterScreen">
   <StackPanel Spacing="2">

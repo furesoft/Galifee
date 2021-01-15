@@ -1,13 +1,13 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using Galifee.Core.I18N;
+using Galifrei.Core.I18N;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace Galifee.UI.Commands
+namespace Galifrei.UI.Commands
 {
     public class SetLanguageCommand : MarkupExtension, ICommand
     {

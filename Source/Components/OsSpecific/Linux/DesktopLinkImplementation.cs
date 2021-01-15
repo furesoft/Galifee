@@ -1,8 +1,8 @@
-﻿using Galifee.Core;
-using Galifee.Core.Platforming;
+﻿using Galifrei.Core;
+using Galifrei.Core.Platforming;
 using GaliFee.Core.Interfaces;
 
-namespace Galifee.Components.OsSpecific.Linux
+namespace Galifrei.Components.OsSpecific.Linux
 {
     [PlatformImplementation(OSName.Linux)]
     public class DesktopLinkImplementation : IDesktopLink

@@ -1,8 +1,8 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Galifee.Components;
+using Galifrei.Components;
 
-namespace Galifee.UI
+namespace Galifrei.UI
 {
     public class DownloaderUIPanel : UserControl
     {

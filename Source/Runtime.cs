@@ -1,9 +1,9 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
-using Galifee.Core;
+using Galifrei.Core;
 using System;
 
-namespace Galifee
+namespace Galifrei
 {
     internal static class Runtime
     {

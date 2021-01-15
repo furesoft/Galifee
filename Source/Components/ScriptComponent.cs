@@ -1,9 +1,9 @@
-﻿using Galifee.Core;
-using Galifee.Core.Interfaces;
+﻿using Galifrei.Core;
+using Galifrei.Core.Interfaces;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Galifee.Components
+namespace Galifrei.Components
 {
     public class ScriptComponent : ISetupComponent, IBeforeInstallEvent
     {

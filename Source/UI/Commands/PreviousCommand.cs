@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 using System;
 using System.Windows.Input;
 
-namespace Galifee.UI.Commands
+namespace Galifrei.UI.Commands
 {
     public class PreviousCommand : MarkupExtension, ICommand
     {

@@ -1,6 +1,6 @@
-﻿using Galifee.Core;
+﻿using Galifrei.Core;
 
-namespace Galifee
+namespace Galifrei
 {
     public class SetupApp
     {

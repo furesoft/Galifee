@@ -17,7 +17,7 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Galifee.LanguageResources\Galifee.LanguageResources.csproj" />
-    <ProjectReference Include="..\Source\Galifee.csproj" />
+    <ProjectReference Include="..\Galifrei.LanguageResources\Galifrei.LanguageResources.csproj" />
+    <ProjectReference Include="..\Source\Galifrei.csproj" />
   </ItemGroup>
 </Project>

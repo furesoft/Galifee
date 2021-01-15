@@ -1,9 +1,9 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Galifee.Core.I18N;
+using Galifrei.Core.I18N;
 
-namespace Galifee.UI.Windows
+namespace Galifrei.UI.Windows
 {
     public class LanguageSelectorWindow : Window
     {
