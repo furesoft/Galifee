@@ -26,6 +26,22 @@ namespace Galifrei.Core.I18N
             }
         }
 
+        public async void AppendLanguageAsync(string id, IResourceLoader contentLoader)
+        {
+            if (_languages.ContainsKey(id))
+            {
+                var newData = LoadLanguageFromStream(await contentLoader.GetStream());
+
+                var language = _languages[id];
+                foreach (var item in newData)
+                {
+                    language.Add(item.Key, item.Value);
+                }
+
+                _languages[id] = language;
+            }
+        }
+
         public void SetLanguageFromName(string name)
         {
             foreach (var l in _languages)

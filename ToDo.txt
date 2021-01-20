@@ -26,5 +26,3 @@ load appbuilder from xml file
 ui
 	popup for closing
 	move to mvvm
-ability to append language resources from other assembly modules
-	LanguageManager.Append(id, resourceLoader)
