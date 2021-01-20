@@ -5,7 +5,7 @@
     <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml" />
     <StyleInclude Source="avares://Avalonia.Themes.Default/Accents/BaseLight.xaml" />
 
-    <StyleInclude Source="avares://Galifrei/UI/Controls/ContentDialogStyle.axaml" />
-    <StyleInclude Source="avares://Galifrei/UI/Controls/DialogControlStyle.axaml" />
+    <StyleInclude Source="avares://Galifrei.Core/Controls/ContentDialogStyle.axaml" />
+    <StyleInclude Source="avares://Galifrei.Core/Controls/DialogControlStyle.axaml" />
   </Application.Styles>
 </Application>

@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Styling;
 using System;
 
-namespace Galifrei.UI.Controls
+namespace Galifrei.Core.Controls
 {
     public class ContentDialog : ContentControl, IStyleable
     {

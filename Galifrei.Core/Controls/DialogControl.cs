@@ -5,7 +5,7 @@ using Galifrei.Core;
 using System;
 using System.Windows.Input;
 
-namespace Galifrei.UI.Controls
+namespace Galifrei.Core.Controls
 {
     public class DialogControl : ContentControl, IStyleable
     {

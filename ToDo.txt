@@ -23,3 +23,6 @@ load appbuilder from xml file
 		</properties>
 	</setup>
 	
+ui
+	popup for closing
+	move to mvvm

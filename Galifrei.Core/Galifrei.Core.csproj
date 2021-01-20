@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <AvaloniaXaml Remove="Controls\ContentDialogStyle.axaml" />
+    <AvaloniaXaml Remove="Controls\DialogControlStyle.axaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="Controls\ContentDialogStyle.axaml" />
+    <AvaloniaResource Include="Controls\DialogControlStyle.axaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.9.12" />
     <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

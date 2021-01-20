@@ -1,4 +1,4 @@
-﻿namespace Galifrei.UI.Controls
+﻿namespace Galifrei.Core.Controls
 {
     public static class DialogService
     {

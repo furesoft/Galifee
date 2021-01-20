@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:core="http://furesoft.ml/schemas/galifee"
         xmlns:local="clr-namespace:Galifrei"
-        xmlns:ui="clr-namespace:Galifrei.UI.Controls"
+        xmlns:ui="clr-namespace:Galifrei.Core.Controls;assembly=Galifrei.Core"
         xmlns:commands="clr-namespace:Galifrei.UI.Commands"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         MinWidth="600" MinHeight="450" WindowStartupLocation="CenterScreen"
