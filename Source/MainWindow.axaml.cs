@@ -34,6 +34,8 @@ namespace Galifrei
             var carousel = this.Find<Carousel>("carousel");
 
             carousel.PageTransition = new PageSlide(TimeSpan.FromMilliseconds(150));
+
+            Runtime.Context.Events.Invoke(Core.EventConstants.WindowOpen, this);
         }
     }
 }

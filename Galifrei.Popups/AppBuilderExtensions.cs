@@ -14,7 +14,7 @@ namespace Galifrei.Popups
             {
                 if (_ is CancelEventArgs e)
                 {
-                    DialogService.Open(new Popups.CloseWindowPopup());
+                    DialogService.Open(new CloseWindowPopup());
                     e.Cancel = true;
                 }
             });
