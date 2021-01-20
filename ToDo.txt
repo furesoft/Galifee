@@ -1,3 +1,5 @@
+move todo to projects.furesoft.ml
+
 components
 	-> registry change
 	-> xmlfile change
