@@ -26,18 +26,17 @@ namespace Galifrei
                 else
                 {
                     desktop.MainWindow = new MainWindow();
-                    desktop.Exit += Desktop_Exit;
                 }
+
+                desktop.Exit += (s, _) =>
+                {
+                    Runtime.Context.Events.Invoke(EventConstants.ApplicationClose, _.ApplicationExitCode);
+                };
 
                 desktop.ShutdownMode = Avalonia.Controls.ShutdownMode.OnLastWindowClose;
             }
 
             base.OnFrameworkInitializationCompleted();
-        }
-
-        private void Desktop_Exit(object sender, ControlledApplicationLifetimeExitEventArgs e)
-        {
-            //ToDo: show a warning message on exit
         }
     }
 }

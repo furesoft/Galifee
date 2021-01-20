@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Galifrei.LanguageResources\Galifrei.LanguageResources.csproj" />
+    <ProjectReference Include="..\Galifrei.Popups\Galifrei.Popups.csproj" />
     <ProjectReference Include="..\Source\Galifrei.csproj" />
   </ItemGroup>
 </Project>

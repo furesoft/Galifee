@@ -21,6 +21,12 @@ namespace Galifrei
             AvaloniaXamlLoader.Load(this);
 
             this.Activated += MainWindow_Activated;
+            this.Closing += MainWindow_Closing;
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Runtime.Context.Events.Invoke(Core.EventConstants.WindowClose, e);
         }
 
         private void MainWindow_Activated(object sender, System.EventArgs e)

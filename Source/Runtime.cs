@@ -21,6 +21,7 @@ namespace Galifrei
             }
 
             Context.Properties.SetProperty("mode", mode);
+            Context.Properties.SetProperty("silent", cli.HasOption("silent"));
 
             if (!cli.HasOption("silent"))
             {

@@ -4,6 +4,7 @@ using Galifrei.Components;
 using Galifrei.Core;
 using Galifrei.Core.AppBuilder;
 using Galifrei.Core.Loaders;
+using Galifrei.Popups;
 
 namespace TestSetup
 {
@@ -19,6 +20,7 @@ namespace TestSetup
                 .AddComponent(new DownloaderComponent())
                 .LoadDefaultLanguages()
                 .EnableAutoLanguage()
+                .EnableMessageOnClose()
                 .Build();
 
             app.Run(args);

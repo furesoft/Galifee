@@ -5,5 +5,6 @@
         WindowOpen,
         WindowClose,
         Error,
+        ApplicationClose,
     }
 }
