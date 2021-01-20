@@ -12,7 +12,15 @@
     <None Remove="Scripting\**" />
   </ItemGroup>
   <ItemGroup>
+    <AvaloniaXaml Remove="UI\Controls\ContentDialogStyle.axaml" />
+    <AvaloniaXaml Remove="UI\Controls\DialogControlStyle.axaml" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Resources\en_EN.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="UI\Controls\ContentDialogStyle.axaml" />
+    <AvaloniaResource Include="UI\Controls\DialogControlStyle.axaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\en_EN.json" />

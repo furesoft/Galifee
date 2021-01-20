@@ -4,23 +4,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:core="http://furesoft.ml/schemas/galifee"
         xmlns:local="clr-namespace:Galifrei"
+        xmlns:ui="clr-namespace:Galifrei.UI.Controls"
         xmlns:commands="clr-namespace:Galifrei.UI.Commands"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         MinWidth="600" MinHeight="450" WindowStartupLocation="CenterScreen"
         MaxWidth="600" MaxHeight="450"
         x:Class="Galifrei.MainWindow"
         Title="Setup">
-  <Grid Margin="5" RowDefinitions="*,35">
-    <Carousel x:Name="carousel" Width="540" local:UIComponentManager.IsCarousel="True">
-      <TextBlock Text="Page 1" />
-      <TextBlock Text="Page 2" />
-      <TextBlock Text="Page 3" />
-      <TextBlock Text="Page 4" />
-    </Carousel>
+  <ui:ContentDialog ui:DialogService.IsHost="True">
+    <Grid Margin="5" RowDefinitions="*,35">
+      <Carousel x:Name="carousel" Width="540" local:UIComponentManager.IsCarousel="True">
+        <TextBlock Text="Page 1" />
+        <TextBlock Text="Page 2" />
+        <TextBlock Text="Page 3" />
+        <TextBlock Text="Page 4" />
+      </Carousel>
 
-    <StackPanel Spacing="5" Orientation="Horizontal" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-      <Button Content="{core:LanguageKey 'previos'}" Command="{commands:PreviousCommand}" CommandParameter="{Binding ElementName=carousel}" />
-      <Button Content="{core:LanguageKey 'next'}" Command="{commands:NextCommand}" CommandParameter="{Binding ElementName=carousel}" />
-    </StackPanel>
-  </Grid>
+      <StackPanel Spacing="5" Orientation="Horizontal" Height="35" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+        <Button Content="{core:LanguageKey 'previos'}" Command="{commands:PreviousCommand}" CommandParameter="{Binding ElementName=carousel}" />
+        <Button Content="{core:LanguageKey 'next'}" Command="{commands:NextCommand}" CommandParameter="{Binding ElementName=carousel}" />
+      </StackPanel>
+    </Grid>
+  </ui:ContentDialog>
 </Window>

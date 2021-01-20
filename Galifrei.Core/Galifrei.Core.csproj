@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-    <AssemblyName>Galifei.Core</AssemblyName>
+    <AssemblyName>Galifrei.Core</AssemblyName>
     <RootNamespace>Galifei.Core</RootNamespace>
   </PropertyGroup>
 
