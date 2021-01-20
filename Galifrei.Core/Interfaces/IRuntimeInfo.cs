@@ -1,6 +1,4 @@
-﻿using Galifrei.Core;
-
-namespace GaliFee.Core.Interfaces
+﻿namespace Galifrei.Core.Interfaces
 {
     public interface IRuntimeInfo
     {

@@ -1,7 +1,6 @@
 ﻿using Avalonia.Controls;
 using Galifrei.Core;
 using Galifrei.Core.Interfaces;
-using System.Threading.Tasks;
 
 namespace Galifrei.Components
 {

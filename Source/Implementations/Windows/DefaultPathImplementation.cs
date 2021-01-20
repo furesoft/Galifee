@@ -2,7 +2,7 @@
 using Galifrei.Core.Platforming;
 using System;
 
-namespace Galifrei.Components.OsSpecific.Windows
+namespace Galifrei.Implementations.Windows
 {
     [PlatformImplementation(OSName.Windows)]
     public class DefaultPathImplementation : IDefaultPaths

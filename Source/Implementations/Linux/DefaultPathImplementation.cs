@@ -2,7 +2,7 @@
 using Galifrei.Core.Platforming;
 using System;
 
-namespace Galifrei.Components.OsSpecific.Linux
+namespace Galifrei.Implementations.Linux
 {
     [PlatformImplementation(OSName.Linux)]
     public class DefaultPathImplementation : IDefaultPaths

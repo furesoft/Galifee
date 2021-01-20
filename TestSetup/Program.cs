@@ -1,9 +1,9 @@
 ﻿using Galifrei;
 using Galifrei.LanguageResources;
+using Galifrei.Components;
 using Galifrei.Core;
 using Galifrei.Core.AppBuilder;
 using Galifrei.Core.Loaders;
-using Galifrei.Components;
 
 namespace TestSetup
 {

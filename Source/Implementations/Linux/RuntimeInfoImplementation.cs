@@ -1,6 +1,6 @@
 ﻿using Galifrei.Core;
+using Galifrei.Core.Interfaces;
 using Galifrei.Core.Platforming;
-using GaliFee.Core.Interfaces;
 using System;
 
 namespace Galifrei.Implementations.Linux

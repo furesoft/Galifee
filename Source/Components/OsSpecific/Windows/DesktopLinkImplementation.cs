@@ -1,6 +1,6 @@
 ﻿using Galifrei.Core;
+using Galifrei.Core.Interfaces;
 using Galifrei.Core.Platforming;
-using GaliFee.Core.Interfaces;
 
 namespace Galifrei.Components.OsSpecific.Windows
 {

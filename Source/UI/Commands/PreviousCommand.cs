@@ -1,5 +1,4 @@
-﻿using Avalonia.Animation;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System;
 using System.Windows.Input;

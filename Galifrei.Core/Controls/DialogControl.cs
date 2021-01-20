@@ -1,7 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Styling;
-using Galifrei.Core;
 using System;
 using System.Windows.Input;
 

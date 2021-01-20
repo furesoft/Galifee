@@ -10,6 +10,7 @@ namespace Galifrei.Core
         public PropertyStore Properties = new PropertyStore();
         public ComponentStore Components = new ComponentStore();
         public ResourceLoaderStore ResourceLoaders = new ResourceLoaderStore();
+        public EventStore Events = new EventStore();
 
         public InstallActionPipeline Pipeline = new InstallActionPipeline();
 

@@ -3,8 +3,6 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Galifrei.Core.I18N;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace Galifrei.UI.Commands

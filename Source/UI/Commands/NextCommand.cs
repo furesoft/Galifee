@@ -1,5 +1,4 @@
-﻿using Avalonia.Animation;
-using Avalonia.Collections;
+﻿using Avalonia.Collections;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;

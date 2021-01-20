@@ -1,7 +1,6 @@
 ﻿using Avalonia.Collections;
 using Avalonia.Controls;
 using Galifrei.Core.Interfaces;
-using System.Collections.ObjectModel;
 
 namespace Galifrei
 {

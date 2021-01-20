@@ -1,7 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Galifrei.Core.I18N;
 
 namespace Galifrei.UI.Windows
 {
