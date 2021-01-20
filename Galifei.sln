@@ -9,18 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication", "TestAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSetup", "TestSetup\TestSetup.csproj", "{E5741560-5C0E-4637-8BF1-D674D709A999}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB9AEB4E-F355-40CC-8610-E1879C80D520}"
-	ProjectSection(SolutionItems) = preProject
-		ToDo.txt = ToDo.txt
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galifrei.Core", "Galifrei.Core\Galifrei.Core.csproj", "{C29244C6-6B18-430E-8F3F-58C2CEEDC74F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galifrei.Dependencies", "Gallifrei.Dependencies\Galifrei.Dependencies.csproj", "{F77D1613-1BDE-4401-B420-87A508CA07E1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galifrei.LanguageResources", "Galifrei.LanguageResources\Galifrei.LanguageResources.csproj", "{B65BBF54-BE5B-4DB9-9420-69CC69D2E997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galifrei.Popups", "Galifrei.Popups\Galifrei.Popups.csproj", "{9C63A026-A462-4637-8906-4939660CA53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galifrei.Popups", "Galifrei.Popups\Galifrei.Popups.csproj", "{9C63A026-A462-4637-8906-4939660CA53F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

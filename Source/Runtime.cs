@@ -1,6 +1,8 @@
 ﻿using Avalonia;
 using Avalonia.Logging.Serilog;
 using Galifrei.Core;
+using Galifrei.Core.Interfaces;
+using Galifrei.Core.Platforming;
 using System;
 
 namespace Galifrei
@@ -15,9 +17,15 @@ namespace Galifrei
 
             InstallMode mode = InstallMode.Install;
 
+            var runtimeInfo = Platform.New<IRuntimeInfo>();
+
             if (cli.GetValue<string>("mode") != null)
             {
                 mode = (InstallMode)Enum.Parse(typeof(InstallMode), cli.GetValue<string>("mode"), true);
+            }
+            else
+            {
+                mode = runtimeInfo.IsApplicationInstalled(Context) ? InstallMode.Uninstall : InstallMode.Install;
             }
 
             Context.Properties.SetProperty("mode", mode);

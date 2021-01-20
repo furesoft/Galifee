@@ -2,6 +2,7 @@
 using Galifrei.Core.Interfaces;
 using Galifrei.Core.Platforming;
 using System;
+using System.IO;
 
 namespace Galifrei.Implementations.Linux
 {
@@ -10,7 +11,7 @@ namespace Galifrei.Implementations.Linux
     {
         public bool IsApplicationInstalled(SetupContext context)
         {
-            throw new NotImplementedException();
+            return File.Exists(Path.Combine(context.Paths.DefaultInstallationPath, context.Properties[NamingConstants.AppName].ToString()));
         }
     }
 }
