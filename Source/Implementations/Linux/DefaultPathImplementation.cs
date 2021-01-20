@@ -11,6 +11,6 @@ namespace Galifrei.Implementations.Linux
 
         public string DefaultLinkExtension => ".desktop";
 
-        public string DefaultInstallationPath => "/usr/bin/"; //ToDo: find installation path for linux
+        public string DefaultInstallationPath => "/usr/bin/";
     }
 }
