@@ -40,6 +40,11 @@ namespace Galifrei.Core.SetupContextStorages
             return default;
         }
 
+        public string Bind(string src)
+        {
+            return SmartFormat.Smart.Format(src, _properties);
+        }
+
         public void SetProperty(string key, object value)
         {
             if (_properties.ContainsKey(key))
