@@ -29,9 +29,9 @@ namespace Galifrei
             }
 
             Context.Properties.SetProperty("mode", mode);
-            Context.Properties.SetProperty("silent", cli.HasOption("silent"));
+            Context.Properties.SetProperty(NamingConstants.Silent, cli.HasOption(NamingConstants.Silent));
 
-            if (!cli.HasOption("silent"))
+            if (!cli.HasOption(NamingConstants.Silent))
             {
                 //run ui mode
                 AppBuilder.Configure<App>()

@@ -8,5 +8,6 @@
         public static string CreateDesktopShortCut = "CreateDesktopShortcut";
         public static string InstallationPath = "InstallationPath";
         public static string UseAutomaticLanguage = "UseAutomaticLanguage";
+        public static string Silent = "silent";
     }
 }
