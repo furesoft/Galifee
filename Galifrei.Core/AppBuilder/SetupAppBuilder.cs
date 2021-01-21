@@ -1,4 +1,7 @@
-﻿namespace Galifrei.Core.AppBuilder
+﻿using Galifrei.Core.Interfaces;
+using Galifrei.Core.Platforming;
+
+namespace Galifrei.Core.AppBuilder
 {
     public class SetupAppBuilder : ISetupAppBuilder
     {
@@ -12,7 +15,12 @@
 
         public static ISetupAppBuilder Configure()
         {
-            return new SetupAppBuilder();
+            var builder = new SetupAppBuilder();
+
+            var defaultPaths = Platform.New<IDefaultPaths>();
+            builder.SetProperty(NamingConstants.InstallationPath, defaultPaths.DefaultInstallationPath);
+
+            return builder;
         }
     }
 }

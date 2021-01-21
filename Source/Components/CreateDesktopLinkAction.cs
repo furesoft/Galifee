@@ -46,7 +46,7 @@ namespace Galifrei.Components
         {
             var name = context.Properties[NamingConstants.AppName] + "." + context.Paths.DefaultLinkExtension;
 
-            return System.IO.Path.Combine(context.Paths.DesktopPath, name);
+            return System.IO.Path.Combine(Path, name);
         }
     }
 }
