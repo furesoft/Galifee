@@ -15,6 +15,7 @@ namespace TestSetup
             var app = SetupAppBuilder.Configure()
                 .SetProperty(NamingConstants.AppName, "TestApplication")
                 .SetProperty(NamingConstants.AppVersion, "1.0.0")
+                .SetApplicationType(ApplicationType.Application)
                 .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
                 .AddAction(new CreateDesktopLinkAction("{DesktopPath}", "TestApplication --WAll"))
                 .AddComponent(new DownloaderComponent())
