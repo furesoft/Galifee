@@ -19,6 +19,7 @@ namespace Galifrei.Core.AppBuilder
 
             var defaultPaths = Platform.New<IDefaultPaths>();
             builder.SetProperty(NamingConstants.InstallationPath, defaultPaths.DefaultInstallationPath);
+            builder.SetProperty(NamingConstants.DesktopPath, defaultPaths.DesktopPath);
 
             return builder;
         }
