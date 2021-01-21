@@ -13,7 +13,7 @@ namespace Galifrei.Popups
         {
             //ToDo: implement enablemessage on close
 
-            if (!(bool)builder.Context.Properties[NamingConstants.Silent])
+            if (builder.Context.Properties[NamingConstants.Silent] == null)
             {
                 builder.Context.Events.Add(EventConstants.WindowClose, (_) =>
                 {

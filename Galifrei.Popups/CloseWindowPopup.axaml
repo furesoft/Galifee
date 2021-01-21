@@ -3,9 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="clr-namespace:Galifrei.Core.Controls;assembly=Galifrei.Core"
+             xmlns:i18n="http://furesoft.ml/schemas/galifee"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Galifrei.Popups.CloseWindowPopup">
-  <ui:DialogControl>
-    <TextBlock Text="{i18n:LanguageKey 'CloseMessage'}" />
+  <ui:DialogControl CommandText="{i18n:LanguageKey 'yes'}">
+    <TextBlock Text="{i18n:LanguageKey 'closeMessage'}" />
   </ui:DialogControl>
 </UserControl>
