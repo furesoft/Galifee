@@ -27,10 +27,10 @@ namespace Galifrei.Core.Platforming
                 }
                 else
                 {
-                    if (typeof(T).IsAssignableFrom(t) || t.IsInstanceOfType(typeof(T)))
+                    var attr = t.GetCustomAttribute<PlatformImplementationAttribute>();
+                    if (attr != null)
                     {
-                        var attr = t.GetCustomAttribute<PlatformImplementationAttribute>();
-                        if (attr != null)
+                        if (typeof(T).IsAssignableFrom(t) || t.IsInstanceOfType(typeof(T)))
                         {
                             if (attr.Platform == currentPlatform)
                             {
