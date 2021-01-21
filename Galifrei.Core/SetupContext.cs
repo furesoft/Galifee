@@ -18,6 +18,8 @@ namespace Galifrei.Core
 
         public Progress CurrentProgress = new Progress();
 
+        public dynamic PropertyBinder;
+
         public bool IsSilent => (bool)Properties[NamingConstants.Silent];
 
         public IDefaultPaths Paths;
@@ -32,6 +34,8 @@ namespace Galifrei.Core
             Paths = Platform.New<IDefaultPaths>();
 
             _tmpDir = Utils.GetTempPath();
+
+            PropertyBinder = new DynamicPropertyObject(this);
         }
 
         public void ExecuteComponentInstall(ISetupComponent component)

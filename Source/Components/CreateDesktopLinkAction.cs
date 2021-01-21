@@ -21,6 +21,8 @@ namespace Galifrei.Components
         {
             var linkCreator = Platform.New<IDesktopLink>();
 
+            context.PropertyBinder.InstallationPath = "hello world";
+
             linkCreator.CreateDesktopLink(context, System.IO.Path.Combine(
                 context.Properties.Bind(Path),
                 GetLinkFilename(context))
