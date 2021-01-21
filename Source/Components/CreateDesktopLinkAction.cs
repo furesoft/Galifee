@@ -44,9 +44,7 @@ namespace Galifrei.Components
 
         private string GetLinkFilename(SetupContext context)
         {
-            var name = context.Properties[NamingConstants.AppName] + "." + context.Paths.DefaultLinkExtension;
-
-            return System.IO.Path.Combine(Path, name);
+            return context.Properties[NamingConstants.AppName] + "." + context.Paths.DefaultLinkExtension;
         }
     }
 }
