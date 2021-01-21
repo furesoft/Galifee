@@ -16,6 +16,8 @@ namespace Galifrei.Core
 
         public Terminal Shell = new Terminal();
 
+        public Progress CurrentProgress = new Progress();
+
         public bool IsSilent => (bool)Properties[NamingConstants.Silent];
 
         public IDefaultPaths Paths;
