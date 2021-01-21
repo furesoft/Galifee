@@ -5,6 +5,8 @@
         string DesktopPath { get; }
         string DefaultLinkExtension { get; }
 
+        string DefaultApplicationExtension { get; }
+
         string DefaultInstallationPath { get; }
     }
 }

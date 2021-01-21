@@ -12,5 +12,7 @@ namespace Galifrei.Implementations.Linux
         public string DefaultLinkExtension => ".desktop";
 
         public string DefaultInstallationPath => "/usr/bin/";
+
+        public string DefaultApplicationExtension => "";
     }
 }

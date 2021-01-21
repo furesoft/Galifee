@@ -12,5 +12,7 @@ namespace Galifrei.Implementations.Windows
         public string DefaultLinkExtension => ".lnk";
 
         public string DefaultInstallationPath => Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
+
+        public string DefaultApplicationExtension => ".exe";
     }
 }

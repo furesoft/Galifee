@@ -9,5 +9,6 @@
         public static string InstallationPath = "InstallationPath";
         public static string UseAutomaticLanguage = "UseAutomaticLanguage";
         public static string Silent = "silent";
+        public static string IsTerminal = "IsTerminal";
     }
 }

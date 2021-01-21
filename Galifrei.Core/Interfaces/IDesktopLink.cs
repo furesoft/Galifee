@@ -2,6 +2,6 @@
 {
     public interface IDesktopLink
     {
-        void CreateDesktopLink(SetupContext context, string filename);
+        void CreateDesktopLink(SetupContext context, string filename, string exec);
     }
 }

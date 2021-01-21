@@ -43,6 +43,13 @@ namespace Galifrei.Core.AppBuilder
             return builder;
         }
 
+        public static ISetupAppBuilder SetApplicationType(this ISetupAppBuilder builder, ApplicationType type)
+        {
+            builder.SetProperty(NamingConstants.IsTerminal, type == ApplicationType.Terminal ? true : false);
+
+            return builder;
+        }
+
         public static ISetupAppBuilder AddMetadata(this ISetupAppBuilder builder, Assembly assembly)
         {
             var name = assembly.GetName();
