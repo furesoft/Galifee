@@ -8,7 +8,7 @@
     <Setter Property="MinHeight" Value="125" />
     <Setter Property="Template">
       <ControlTemplate>
-        <Border CornerRadius="2" MinHeight="{TemplateBinding MinHeight}" Margin="5" BorderBrush="{StaticResource ThemeBorderHighBrush}" BorderThickness="2"  Background="White">
+        <Border BoxShadow="4 4 4 gray" CornerRadius="2" MinHeight="{TemplateBinding MinHeight}" Margin="5" BorderBrush="{StaticResource ThemeBorderHighBrush}" BorderThickness="2"  Background="White">
           <Grid RowDefinitions="10,*,10,30" Margin="5,0,5,5">
             <ContentPresenter Content="{TemplateBinding Content}" Margin="3" Grid.Row="1" />
 
