@@ -18,7 +18,7 @@ namespace TestSetup
                 .SetApplicationType(ApplicationType.Application)
                 .AddResource(new AssemblyResourceLoader("TestSetup.SetupData.zip", typeof(Program).Assembly))
                 .AddAction(new CreateDesktopLinkAction("{DesktopPath}", "TestApplication --WAll"))
-                .AddComponent(new DownloaderComponent())
+                .AddComponent(new ProgressComponent())
                 .LoadDefaultLanguages()
                 .EnableAutoLanguage()
                 .EnableMessageOnClose()

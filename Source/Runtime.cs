@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Logging.Serilog;
 using Galifrei.Core;
 using Galifrei.Core.Interfaces;
 using Galifrei.Core.Platforming;
@@ -36,7 +35,7 @@ namespace Galifrei
                 //run ui mode
                 AppBuilder.Configure<App>()
                         .UsePlatformDetect()
-                        .LogToDebug()
+                        .LogToTrace()
                         .StartWithClassicDesktopLifetime(args);
             }
             else

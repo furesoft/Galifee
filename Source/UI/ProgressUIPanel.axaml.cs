@@ -1,12 +1,18 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Galifrei.Core;
 
-namespace Galifrei.UI.Windows
+namespace Galifrei.UI
 {
-    public class LanguageSelectorWindow : Window
+    public class ProgressUIPanel : UserControl
     {
-        public LanguageSelectorWindow()
+        public ProgressUIPanel(SetupContext context)
+        {
+            DataContext = context.CurrentProgress;
+        }
+
+        public ProgressUIPanel()
         {
             this.InitializeComponent();
         }
