@@ -14,5 +14,7 @@ namespace Galifrei.Implementations.Linux
         public string DefaultInstallationPath => "/usr/bin/";
 
         public string DefaultApplicationExtension => "";
+
+        public string AutoStartPath => "/etc/xdg/autostart/";
     }
 }

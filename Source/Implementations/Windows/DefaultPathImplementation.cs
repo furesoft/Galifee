@@ -14,5 +14,7 @@ namespace Galifrei.Implementations.Windows
         public string DefaultInstallationPath => Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
 
         public string DefaultApplicationExtension => ".exe";
+
+        public string AutoStartPath => @$"C:\Users\{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\Roaming\Microsoft\Windows\Start Menu\Programs\Startup";
     }
 }

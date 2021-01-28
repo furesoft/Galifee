@@ -8,5 +8,7 @@
         string DefaultApplicationExtension { get; }
 
         string DefaultInstallationPath { get; }
+
+        string AutoStartPath { get; }
     }
 }
