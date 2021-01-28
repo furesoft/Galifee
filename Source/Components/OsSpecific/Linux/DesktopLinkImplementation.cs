@@ -1,5 +1,6 @@
 ﻿using Galifrei.Core;
 using Galifrei.Core.Interfaces;
+using Galifrei.Core.Loaders;
 using Galifrei.Core.Platforming;
 using System.IO;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Galifrei.Components.OsSpecific.Linux
     [PlatformImplementation(OSName.Linux)]
     public class DesktopLinkImplementation : IDesktopLink
     {
-        public void CreateDesktopLink(SetupContext context, string filename, string exec)
+        public IResourceLoader CreateDesktopLink(SetupContext context, string filename, string exec)
         {
             var contentSb = new StringBuilder();
 
@@ -19,7 +20,7 @@ namespace Galifrei.Components.OsSpecific.Linux
             contentSb.AppendLine("Terminal=").Append(context.Properties[NamingConstants.IsTerminal]);
             contentSb.AppendLine("Type=Application");
 
-            File.WriteAllText(filename, contentSb.ToString());
+            return new StringResourceLoader(filename, contentSb.ToString());
         }
     }
 }
