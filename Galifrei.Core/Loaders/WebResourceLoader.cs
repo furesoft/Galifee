@@ -1,4 +1,5 @@
 ﻿using Galifrei.Core.Interfaces;
+using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace Galifrei.Core.Loaders
         }
 
         public string URI { get; set; }
+
+        public string Filename => new Uri(URI).LocalPath;
 
         public async Task<Stream> GetStream()
         {

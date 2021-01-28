@@ -5,6 +5,8 @@ namespace Galifrei.Core.Interfaces
 {
     public interface IResourceLoader
     {
+        string Filename { get; }
+
         public Task<Stream> GetStream();
     }
 }

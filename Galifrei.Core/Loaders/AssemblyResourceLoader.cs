@@ -17,6 +17,8 @@ namespace Galifrei.Core.Loaders
 
         public Assembly Assembly { get; }
 
+        public string Filename => Path.GetFileName(Fullname);
+
         public Task<Stream> GetStream()
         {
             var strm = Assembly.GetManifestResourceStream(Fullname);
